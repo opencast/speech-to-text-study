@@ -1,0 +1,3089 @@
+WEBVTT
+Kind: captions
+Language: de
+
+00:00:05.330 --> 00:00:09.900
+So, schönen Guten Tag  zusammen. Ich begrüße sie zur Veranstaltung Algorithmen.
+
+00:00:10.099 --> 00:00:14.160
+Gestern haben wir ja die Fallunterscheidungen kennengelernt,
+
+00:00:14.160 --> 00:00:19.859
+die dafür sorgen, dass so der ablauf in
+einem Programm von Bedingungen abhängt
+
+00:00:19.859 --> 00:00:25.560
+und wir dann verschiedene Zweige weiter
+verfolgen. So, so richtig spannend wird es
+
+00:00:25.560 --> 00:00:30.060
+natürlich erst dann, wenn wir in
+Schleifen hereinkommen können,
+
+00:00:30.060 --> 00:00:34.620
+denn solange wir nur so ein Switch/Case
+oder so ein if-then-else untereinander haben
+
+00:00:34.620 --> 00:00:38.460
+da kann natürlich jetzt nicht so viel
+schief gehen, weil wir in jedem Falle ja
+
+00:00:38.460 --> 00:00:44.219
+von oben immer weiter uns nach unten
+bewegen. So bei einer Schleife haben wir
+
+00:00:44.219 --> 00:00:49.440
+schon beim Kollatz gesehen, wird immer
+wieder eine Bedingung abgeprüft und es
+
+00:00:49.440 --> 00:00:54.300
+ist nicht immer so offensichtlich, ob die
+dann jemals "false" ergibt
+
+00:00:54.300 --> 00:00:59.309
+und deswegen möchte ich also heute noch
+mal besonders auf die Schleifen eingehen,
+
+00:00:59.309 --> 00:01:03.290
+auf die While-Schleifen auf die Do-While-Schleife auf die For-Schleife.
+
+00:01:03.290 --> 00:01:07.439
+Also fangen wir mit der Schleife an, die
+mir ja schon kennen, das ist die klassische
+
+00:01:07.439 --> 00:01:12.450
+While-Schleife und nehme an, wir hätten
+eine Variable n,
+
+00:01:12.450 --> 00:01:20.340
+die hätten wir eingelesen, bitte eine
+ganze Zahl eingeben und eine andere
+
+00:01:20.340 --> 00:01:27.360
+Variable e, die setze ich jetzt mal auf 1.
+So, sie merken, wenn ich hier in der
+
+00:01:27.360 --> 00:01:31.950
+Vorlesung so kleine Codeschnipsel an die
+Tafel schreibe, das ist natürlich nicht
+
+00:01:31.950 --> 00:01:34.320
+ein komplettes, lauffähiges Java-Programm,
+
+00:01:34.320 --> 00:01:37.500
+ja das wäre ja auch jetzt hier nicht
+erforderlich,
+
+00:01:37.500 --> 00:01:41.100
+wir haben jetzt zunächst mal immer in
+Integervariablen, dass heißt ich
+
+00:01:41.100 --> 00:01:44.970
+verzichte auch auf die Deklaration,
+sondern gehe davon aus, dass irgendwie n
+
+00:01:44.970 --> 00:01:51.540
+und e ganze Zahlen sind, so jetzt kommt
+eine Schleife die fängt immer an mit
+
+00:01:51.540 --> 00:01:56.640
+while und dann kommt in runden klammern
+eine Bedingung und dann kommt geschweifte
+
+00:01:56.640 --> 00:02:01.259
+Klammer auf und geschweifte Klammer zu.
+So jetzt müssen sie immer darauf achten,
+
+00:02:01.259 --> 00:02:06.810
+das was sie hier abfragen, muss sich
+natürlich auch im Rumpf der Schleife
+
+00:02:06.810 --> 00:02:11.189
+ändern, denn sonst
+können sie ja nicht mehrmals was
+
+00:02:11.189 --> 00:02:13.319
+ausführen und irgendwann einmal
+abbrechen.
+
+00:02:13.319 --> 00:02:18.030
+Das heißt also, wenn wir hier jetzt
+beispielsweise sagen solange n größer
+
+00:02:18.030 --> 00:02:23.489
+als null ist, dann muss hier im Innern
+auch irgendwas mit dem n passieren,
+
+00:02:23.489 --> 00:02:29.099
+ja, und zwar muss runter gezählt werden,
+denn sonst haben wir keine Chance, dass
+
+00:02:29.099 --> 00:02:32.549
+diese Bedingungen irgendwann mal false
+ist. Das heißt also hier würde ich
+
+00:02:32.549 --> 00:02:39.060
+jetzt gleich schreiben n ist gleich n - 1
+und dann hier schreibe jetzt e ist gleich e mal 2.
+
+00:02:39.060 --> 00:02:48.870
+Umrühren, fertig! Also, diese
+Schleife macht offenbar das folgende: sie
+
+00:02:48.870 --> 00:02:54.260
+zählt das n immer runter und sie verdoppelt
+das e
+
+00:02:54.260 --> 00:03:00.980
+und irgendwann mal hoffentlich wird n
+größer Null nicht mehr wahr sein,
+
+00:03:00.980 --> 00:03:08.040
+dann hört die Schleife auf. Können Sie
+immer mit Ihren Nachbarn jetzt tuscheln
+
+00:03:08.040 --> 00:03:15.239
+und besprechen, was berechnet diese
+Schleife? Besprechen sie das mit ihrem
+
+00:03:15.239 --> 00:03:21.180
+Nachbarn: was rechnet diese Schleife aus?
+Also, wir lesen ja ein n ein und dann geben
+
+00:03:21.180 --> 00:03:32.819
+wir das e aus. Das e wird ausgegeben. Ja. Ja, welche Zahl, also was berechnet dieses
+
+00:03:32.819 --> 00:03:36.829
+Programm in Abhängigkeit von n?
+
+00:03:40.040 --> 00:03:46.639
+Bitte? Nein.
+Ja, aber ich meine e ist jetzt Eins.
+
+00:03:48.319 --> 00:03:53.220
+Also nochmal, wir geben hier das n rein
+und dann sollte ich vielleicht hier noch
+
+00:03:53.220 --> 00:04:00.150
+mal sicherheitshalber dazu schreiben ich
+gebe das e aus. Also ich habe hier den
+
+00:04:00.150 --> 00:04:04.769
+ganz simplen Fall von Input / Output, ich
+lese einen Zahl ein, dann tue ich
+
+00:04:04.769 --> 00:04:10.829
+irgendetwas und spucke eine Zahl aus und
+das, was ich ausspucke, bezogen auf die
+
+00:04:10.829 --> 00:04:19.440
+Eingabe ist was? Zwei hoch n, ja? Also diese kleine Schleife berechnet  f von n gleich zwei
+
+00:04:19.440 --> 00:04:24.290
+hoch n weil Zwei hoch n entsteht dadurch, dass sich die
+
+00:04:24.290 --> 00:04:31.730
+Zahl 2 n-mal wird sich selbst malnehme.
+Ja? Oder oder oder anders ausgedrückt
+
+00:04:31.730 --> 00:04:37.220
+ich multipliziere immer mit zwei, ich bilde die Zweier-Potenzen und da ich hier
+
+00:04:37.220 --> 00:04:40.310
+anfangen mit 1 und dann wird im
+nächsten Durchlauf 2, dann wird da
+
+00:04:40.310 --> 00:04:46.310
+4,  dann wird da 8, dann wird da 16 draus und so weiter und das mache ich so oft wie der
+
+00:04:46.310 --> 00:04:53.840
+Wert in n war und das ist gerade zwei
+hoch n, ja? Dass diese Schleife hier terminiert,
+
+00:04:53.840 --> 00:04:58.220
+ist ganz offensichtlich, weil ich ja
+dieses n hier runterzähle
+
+00:04:58.220 --> 00:05:04.640
+und deswegen wird sie irgendwann einmal
+aufhören. Ja? Ich lasse jetzt immer so die
+
+00:05:04.640 --> 00:05:08.810
+Spezialfälle weg, wenn es einer
+negativen Zahl da reingeht, ja, wir gehen
+
+00:05:08.810 --> 00:05:13.610
+jetzt einfach mal von den natürlichen
+Zahlen aus. So, wenn ich schreibe n
+
+00:05:13.610 --> 00:05:19.730
+gleich n - 1, dann lässt sich das noch
+etwas abkürzen, ich darf jetzt
+
+00:05:19.730 --> 00:05:28.130
+auch schreiben und dazu würde ich auch
+durchaus ermuntern, n--,  wenn wir also
+
+00:05:28.130 --> 00:05:33.830
+eine Zahl um 1 verringern wollen, dann
+können wir einfach sagen n--, dadurch
+
+00:05:33.830 --> 00:05:39.100
+haben wir jetzt irgendwie ein keystroke
+gespart.
+
+00:05:39.400 --> 00:05:43.669
+So, auch dieses hier lässt sich noch
+abkürzen, ich erwähnte nur der
+
+00:05:43.669 --> 00:05:47.120
+Vollständigkeit halber, aber das würde
+ich jetzt eigentlich nicht empfehlen, sie
+
+00:05:47.120 --> 00:05:54.740
+dürfen hier aufschreiben n mal gleich
+zwei. Also dies ist die Abkürzung für e
+
+00:05:54.740 --> 00:06:06.350
+ist gleich e mal 2. While-Schleife noch mal:
+zunächst kommt die Bedingung, dann kommt
+
+00:06:06.350 --> 00:06:11.410
+der Rumpf. Es kann also durchaus sein,
+dass sie in eine While-Schleife
+
+00:06:11.410 --> 00:06:16.820
+überhaupt nicht einsteigen, weil
+vielleicht von Anfang an diese Bedingung
+
+00:06:16.820 --> 00:06:20.300
+nicht true ist.
+Das ist jetzt nicht weiter tragisch,
+
+00:06:20.300 --> 00:06:25.810
+sondern die While-Schleife ist bereits
+mehrmals zu laufen, aber
+
+00:06:25.810 --> 00:06:29.290
+sie hat auch nichts dagegen, wenn sie gar
+nicht zum Einsatz kommen, weil von Anfang
+
+00:06:29.290 --> 00:06:33.460
+an diese Bedingungen hier nicht erfüllt
+ist. Wenn sie beispielsweise eine 0 einlesen,
+
+00:06:33.460 --> 00:06:38.530
+dann würde diese Schleife gar nichts
+machen. Kommt trotzdem was Richtiges
+
+00:06:38.530 --> 00:06:47.530
+raus? Richtig es kommt trotzdem was
+richtig ist raus, denn 2 hoch 0 ist ja
+
+00:06:47.530 --> 00:06:53.520
+1 und diese 1, die haben wir oben
+in das e ja schon rein geschrieben.
+
+00:06:53.520 --> 00:07:01.000
+Okay, so dann nehmen wir jetzt die nächste
+Art der Schleife das ist die Do-While
+
+00:07:01.000 --> 00:07:05.400
+Schleife da fangen wir also mit einem
+Do an
+
+00:07:05.400 --> 00:07:13.840
+dann kommen die geschweiften Klammern und dann kommt die Bedingung, die gelten soll,
+
+00:07:13.840 --> 00:07:21.790
+damit ich erneut in die Schleife
+reingehe. Das bedeutet also bei einer
+
+00:07:21.790 --> 00:07:28.540
+Do-While-Schleife, ja, müssen wir in jedem
+Falle einmal hierdurch, weil erst dann
+
+00:07:28.540 --> 00:07:33.490
+wird überprüft, ob diese Bedingung wahr
+ergibt, dann müssen sie noch ein
+
+00:07:33.490 --> 00:07:38.229
+zweites mal darein.
+Also auch hier nehme ich jetzt
+
+00:07:38.229 --> 00:07:42.360
+folgendes an: ich habe wieder ein n
+eingelesen,
+
+00:07:42.360 --> 00:07:50.020
+ja, und ich setze e auf -1, um sie jetzt zu
+verwirren, das steht jetzt nicht im
+
+00:07:50.020 --> 00:07:55.090
+Skript, das nützt nichts wenn sie da
+jetzt nachgucken. So, was mache ich jetzt
+
+00:07:55.090 --> 00:08:02.680
+im Rumpf dieser Do-While-Schleife? Ich sage n ist gleich n durch 2 und e ist gleich
+
+00:08:02.680 --> 00:08:11.139
+e plus 1. Bevor wir überlegen, was dieses
+Tierchen macht, wieder zur Abkürzung:
+
+00:08:11.139 --> 00:08:16.120
+wenn wir irgendwo schreiben, ist gleich e
+plus 1, dann können wir auch schreiben,
+
+00:08:16.120 --> 00:08:23.830
+und dazu würde ich sie ermuntern, e++. Also eine Variable und dahinter
+
+00:08:23.830 --> 00:08:31.450
+zwei Pluszeichen bedeutet, diese Variable
+wird um 1 erhöht und auch dieses hier
+
+00:08:31.450 --> 00:08:34.960
+können wir jetzt wieder  - was,
+was würden sie jetzt folgern wie ist die
+
+00:08:34.960 --> 00:08:44.260
+Abkürzung für n ist gleich gleich n-Halbe
+das müsste da geht, stehen? Ja? Laut! n durch
+
+00:08:44.260 --> 00:08:49.600
+gleich 2. Ja also ich denke dies ist
+jetzt nicht besser lesbar, als dieses
+
+00:08:49.600 --> 00:08:56.020
+hier und daher würde ich das jetzt
+nicht irgendwie empfehlen aber e++
+
+00:08:56.020 --> 00:09:01.290
+und e-- oder n -- ist
+durchaus sinnvoll.
+
+00:09:01.290 --> 00:09:07.450
+So hier wird jetzt n halbiert, e wird um
+Eins höher gezählt und jetzt kommt
+
+00:09:07.450 --> 00:09:11.110
+natürlich eine Bedingung, ja, und als
+Bedingung nehme ich jetzt n größer
+
+00:09:11.110 --> 00:09:21.400
+Null. So, und ganz am Ende mache ich
+wieder die Ausgabe und ja println jetzt wieder das e.
+
+00:09:23.580 --> 00:09:30.280
+Diskutieren Sie mit ihrem Nachbarn: was
+wird hier berechnet? Also, wir stecken oben
+
+00:09:30.280 --> 00:09:36.780
+ein n rein - 
+noch nicht die Antwort, eine Frage?
+
+00:09:37.860 --> 00:09:43.570
+Doch, doch, aber ich bin dankbar
+für die Frage. Wir sind bei den ganzen
+
+00:09:43.570 --> 00:09:49.990
+Zahlen, die Integer sind ganze Zahlen,
+wir haben jetzt keine, wir machen jetzt
+
+00:09:49.990 --> 00:09:54.490
+keine Gleitkommazahlen wo sie aus
+1,   ein Halb, ein Viertel, ein Achtel werden,
+
+00:09:54.490 --> 00:10:04.630
+sondern wenn sie Fünf durch Zwei teilen,
+kommt daraus? Zwei. Wenn sie Zwei durch
+
+00:10:04.630 --> 00:10:17.320
+Zwei teilen, kommt raus? Eins. Wenn sie Eins durch Zwei teilen kommt raus: 0. Eins ganzzahlig
+
+00:10:17.320 --> 00:10:23.440
+geteilt durch Zwei ist 0 Rest 1. Ja?
+Also, denkt sie immer daran,
+
+00:10:23.440 --> 00:10:30.000
+wir sind hier bei den ganzen Zahlen und
+dieser Operator hier, dieses, dieser Slash
+
+00:10:30.000 --> 00:10:35.740
+bedeutet wir rechnen mit ganzen Zahlen,
+Java weiß einfach, das ist eine ganze Zahl,
+
+00:10:35.740 --> 00:10:41.350
+das ist eine ganze Zahl, also wird
+messerscharf gefolgert: dieser Operator
+
+00:10:41.350 --> 00:10:46.810
+ist jetzt die ganzzahlige Division.
+So, jetzt nochmal: diskutieren Sie mit
+
+00:10:46.810 --> 00:10:52.779
+ihrem Nachbarn, was dieses, diese
+Schleife macht bezogen auf das
+
+00:10:52.779 --> 00:10:55.680
+eingelesene n.
+
+00:11:11.430 --> 00:11:18.270
+n wird immer halbiert und jedes mal zählen
+wir eins höher. Wir zählen also mit, wie
+
+00:11:18.270 --> 00:11:23.390
+oft wir n halbieren können, bis wir bei
+Null angekommen sind.
+
+00:11:23.390 --> 00:11:29.570
+Ich behaupte mal das ist eine Funktion,
+die kennen sie alle aus der Schule.
+
+00:11:48.930 --> 00:11:55.000
+Wenn ich da mit Acht reingehe,
+was kommt dahinter raus, wenn ich hier
+
+00:11:55.000 --> 00:12:00.250
+das Acht immer mehrmals halbieren und
+mitzähle, wer hat das mal ausprobiert
+
+00:12:00.250 --> 00:12:10.840
+ja, nein, ich höre... 3, wenn sie Acht eingeben, dann werden sie feststellen, dass sie das
+
+00:12:10.840 --> 00:12:14.740
+hier, dass sie dreimal hier durchlaufen
+können, nein, dass sie viermal dadurch
+
+00:12:14.740 --> 00:12:17.800
+laufen können aber da sie ja bei  -1
+angefangen sind, haben sie
+
+00:12:17.800 --> 00:12:22.630
+hinterher ne 3, so und wenn sie da mit
+Vier reingehen, dann werden sie
+
+00:12:22.630 --> 00:12:26.500
+feststellen, dass das Ergebnis 2 ist und wenn sie mit zwei reingehen, dann ist das
+
+00:12:26.500 --> 00:12:33.310
+Ergebnis 1, was ist das für eine
+Funktion? Ja, der Logarithmus der
+
+00:12:33.310 --> 00:12:41.890
+Logarithmus zur Basis 2 gibt an, wie
+oft sie eine Zahl halbieren können, bis
+
+00:12:41.890 --> 00:12:45.000
+sie bei Null angelangt sind.
+
+00:12:45.180 --> 00:12:51.700
+Wer jetzt denkt Logarithmus - was ist das denn? -  nichts anmerken lassen, ja, heute Abend
+
+00:12:51.700 --> 00:12:58.210
+sofort nach hause laufen, nachblättern
+was ist der Logarithmus. Der Logarithmus zur
+
+00:12:58.210 --> 00:13:03.310
+Basis 2 wird sich durch diese Vorlesung
+ziehen, immer und immer wieder werden wir
+
+00:13:03.310 --> 00:13:12.480
+feststellen, dass Informatik sehr viel
+der Logarithmus zur Basis 2 vorkommt,
+
+00:13:12.870 --> 00:13:18.330
+insbesondere immer dann, wenn wir ein
+Problem haben, was wir halbieren,
+
+00:13:18.330 --> 00:13:22.750
+dann sind wir unheimlich glücklich, weil
+wir dann eine Hälfte schon wieder weg
+
+00:13:22.750 --> 00:13:25.480
+lassen können und wenn wir das
+Ergebnis wieder halbieren und wieder
+
+00:13:25.480 --> 00:13:28.450
+halbieren, dann können wir uns sehr schnell auf's
+
+00:13:28.450 --> 00:13:32.800
+Ziel zu bewegen, also der Zweierlogarithmus, also hier wird
+
+00:13:32.800 --> 00:13:39.250
+ausgerechnet f von n ist gleich
+Logarithmus zur Basis 2 von dem n, so
+
+00:13:39.250 --> 00:13:43.270
+aber da wäre natürlich nur mit ganzen
+Zahlen arbeiten, ist das jetzt hier
+
+00:13:43.270 --> 00:13:46.960
+irgendwie abgerundet, ja, also wir können
+ja auch den
+
+00:13:46.960 --> 00:13:51.490
+der ZweierLogarithmus von 7 ist er jetzt keine ganze Zahl mehr, aber wir rechnen hier nur
+
+00:13:51.490 --> 00:13:55.450
+mit ganzen Zahlen, also haben wir jetzt
+hier, müssen wir noch hin schreiben, das
+
+00:13:55.450 --> 00:13:59.860
+ist irgendwie abgerundet. So, aber hier
+kommt es nicht auf den Logarithmus an,
+
+00:13:59.860 --> 00:14:04.480
+sondern auf die beiden Formen der
+Schleifen die While-Schleife hat erst
+
+00:14:04.480 --> 00:14:08.110
+die Bedienung, dann kommt der Rumpf die
+Do-While-Schleife hat erst den Rumpf und
+
+00:14:08.110 --> 00:14:13.030
+dann die Bedingung. So, wollen wir das nochmal an zwei anderen Beispielen üben:
+
+00:14:13.030 --> 00:14:18.490
+stellen Sie sich vor, Sie wollen vom
+Benutzer mehrere Zahlen einlesen und
+
+00:14:18.490 --> 00:14:25.780
+wollen die alle aufaddieren. Da sie nicht
+wissen, ob er jetzt 5 Zahlen
+
+00:14:25.780 --> 00:14:33.340
+anliefert oder 42, ja, müssen sie irgendeinen Weg finden, zu sagen: so jetzt ist aber
+
+00:14:33.340 --> 00:14:38.560
+Schluss mit der Eingabe. So und das wird
+jetzt in diesem simplen Beispiel
+
+00:14:38.560 --> 00:14:43.240
+dadurch gemacht, dass wir mit dem
+Benutzer vereinbart haben, wenn der das
+
+00:14:43.240 --> 00:14:49.950
+erste mal eine 0 eingibt, dann ist seine
+Eingabesequenz zu Ende.
+
+00:14:49.950 --> 00:14:55.150
+So, wenn ich also jetzt immer wieder aufaddieren möchte, wieviele Variablen
+
+00:14:55.150 --> 00:15:06.490
+brauche ich jetzt für diese Schleife, wo
+ich immer was aufaddiere. Ja, bitte?
+
+00:15:06.490 --> 00:15:11.500
+Ein, eine reicht nicht, denn wenn ich eine Variable habe in der sozusagen die Zwischensumme
+
+00:15:11.500 --> 00:15:17.070
+drin steckt, dann fehlt mir noch eine
+Variable, die jeweils die nächste Zahl
+
+00:15:17.070 --> 00:15:26.770
+beinhaltet. Ja, also ich hätte praktisch
+bei diesem Problem eine Variable, da
+
+00:15:26.770 --> 00:15:30.000
+steht die Summe drin,
+
+00:15:31.110 --> 00:15:36.070
+die setze ich natürlich zu Beginn auf
+0, denn noch habe ich nichts aufaddiert
+
+00:15:36.070 --> 00:15:40.690
+und dann habe ich eine Variable, wie ich
+immer zum Einlesen verwende.
+
+00:15:40.690 --> 00:15:53.350
+Ja, also x ist gleich io readint
+bitte eine Zahl eingeben. So, und wie sieht
+
+00:15:53.350 --> 00:15:56.430
+jetzt die Schleife aus?
+
+00:15:59.980 --> 00:16:04.880
+Was mache ich immer wieder, also was wird hier im Rumpf der schleife passieren
+
+00:16:04.880 --> 00:16:10.339
+müssen, damit ich die gerade eingelesene
+Zahl dazu packen kann?
+
+00:16:10.339 --> 00:16:20.000
+Was muss ich dazu machen im Rumpf? Ja, ich muss im Rumpf auf die Summe das x
+
+00:16:20.000 --> 00:16:32.690
+draufaddieren. Ich muss also schreiben
+Summe ist gleich Summe plus x, wenn in
+
+00:16:32.690 --> 00:16:37.430
+der in der Summe ist schon was, hat sich
+schon was angesammelt, von allen Zahlen,
+
+00:16:37.430 --> 00:16:41.480
+die sie vorher eingelesen haben, jetzt
+kommt ihm wie die Aktuellste dazu, das
+
+00:16:41.480 --> 00:16:44.480
+ist das x, das ist da gerade ein
+gelesen worden
+
+00:16:44.480 --> 00:16:49.490
+und dann ist natürlich dieses hier die
+Schreibweise, mit der ich auf die Variable
+
+00:16:49.490 --> 00:16:53.810
+Summe etwas hinzu packe.
+Nochmal für die Programmieranfänger:
+
+00:16:53.810 --> 00:16:58.940
+ja, das sieht jetzt wieder immer im
+mathematischen Sinne natürlich sonderbar aus,
+
+00:16:58.940 --> 00:17:02.810
+aber wir wissen ja, was rechts zum
+Gleichheitszeichen steht, wird erst mal
+
+00:17:02.810 --> 00:17:08.030
+ausgewertet und anschließend wird das
+auch an die Variable überwiesen auf der
+
+00:17:08.030 --> 00:17:12.890
+linken Seite steht.
+So, was haben wir jetzt mit dem Benutzer
+
+00:17:12.890 --> 00:17:17.360
+ausgemacht, wie kann er uns signalisieren
+so das war jetzt das Letzte was von mir
+
+00:17:17.360 --> 00:17:29.750
+bekommen hast? Ja, richtig, solange x ungleich 0 ist, muss ich etwas tun, denn
+
+00:17:29.750 --> 00:17:34.820
+wenn x ungleich 0 ist, dann war
+diese soeben eingegebene Zahl ernst
+
+00:17:34.820 --> 00:17:38.090
+gemeint und ich soll sich verarbeiten
+und das tue ich ja hier.
+
+00:17:38.090 --> 00:17:41.960
+Ich addiere sie auf Summe drauf. So, was
+muss ich jetzt den nächsten Schritt
+
+00:17:41.960 --> 00:17:44.410
+machen?
+
+00:17:46.690 --> 00:17:51.309
+Ja mal ein Anderer: was muss ich jetzt den
+nächsten Schritt machen? Ich habe jetzt
+
+00:17:51.309 --> 00:17:55.419
+gerade eine drauf addiert und sie sehen
+hier ist noch Platz für ein Statement:
+
+00:17:55.419 --> 00:18:00.100
+was muss jetzt hier passieren, damit ich
+jetzt selber nochmal machen kann? Wir
+
+00:18:00.100 --> 00:18:05.230
+brauchen ein neues x und wie kriegen
+wir das her? Ja, x genau das, was hier
+
+00:18:05.230 --> 00:18:15.330
+oben steht: x ist gleich io read int, das
+heißt also im Rumpf der Schleife wird
+
+00:18:15.330 --> 00:18:21.429
+das zuletzt eingelesene x verknüpft
+und dann wird sofort das Nächste
+
+00:18:21.429 --> 00:18:26.409
+besorgt und dann wird natürlich hier
+wieder gefragt, ist das, was du gerade
+
+00:18:26.409 --> 00:18:34.139
+besorgt hast 0? Dann kannst du aufhören,
+wäre es aber verschieden ist von 0,
+
+00:18:34.139 --> 00:18:38.039
+ja, dann geht die ganze Prozedur von vorne
+los. Dann wird wieder das gerade
+
+00:18:38.039 --> 00:18:46.480
+eingelesene x hier, diese x ist ja eine
+Schleife später, dieses x hier. Ja, dann
+
+00:18:46.480 --> 00:18:51.509
+kommt das da wieder drauf. So, Stunden
+später, wenn wir also hier hinkommen,
+
+00:18:51.509 --> 00:19:00.039
+steht das Ergebnis wo? Wo ist jetzt das
+Ergebnis, was wir jetzt zusammen
+
+00:19:00.039 --> 00:19:04.720
+gesammelt haben?
+In Summe ja sie können wir jetzt
+
+00:19:04.720 --> 00:19:08.409
+println, oder wie auch immer.
+Also wir haben hier oben auf 0
+
+00:19:08.409 --> 00:19:17.529
+gesetzt und dann haben wir hier eine uns
+noch unbekannte Anzahl, oft mit einer vom
+
+00:19:17.529 --> 00:19:26.889
+Benutzer angelieferten Zahl, erhöht. Also, Ein Beispiel für ne While-Schleife.
+
+00:19:26.889 --> 00:19:32.110
+While Bedingungen und an tue irgendetwas.  Und sie sehen, auch wenn der, wenn der
+
+00:19:32.110 --> 00:19:39.399
+Benutzer als allererstes eine 0 eingibt, dann
+durchlaufen wir überhaupt gar nicht
+
+00:19:39.399 --> 00:19:42.490
+diese Schleife.
+Da ist gar nichts zu tun, weil er schon
+
+00:19:42.490 --> 00:19:49.149
+mit seiner ersten Zahl signalisiert, so
+jetzt war Schluss. Ja, dann steht aber in
+
+00:19:49.149 --> 00:19:57.750
+Summe auch der richtige Wert drin.
+Die Summe wurde ja mit 0 initialisiert.
+
+00:19:58.330 --> 00:20:03.200
+So, nochmal ein Beispiel für ne Do-While-Schleife: also wir stellen uns nochmal
+
+00:20:03.200 --> 00:20:08.570
+das Problem von gestern vor mit dem
+Monatsnamen oder mit den Namen für die
+
+00:20:08.570 --> 00:20:12.230
+Jahreszeiten.
+Wir wollen ja vom Benutzer ein m einlesen
+
+00:20:12.230 --> 00:20:17.000
+und wir haben dann gesagt: ja wir müssen
+irgendwie sicher gehen, dass dieses m
+
+00:20:17.000 --> 00:20:22.220
+auch im richtigen Intervall ist. So, das
+ruft jetzt beispielsweise nach ner
+
+00:20:22.220 --> 00:20:33.860
+Do-While-Schleife. Also, was möchte ich
+machen? Ich möchte hier im Rumpf der
+
+00:20:33.860 --> 00:20:40.399
+Schleife den nächsten Versuch
+unternehmen von diesem widerborstigen
+
+00:20:40.399 --> 00:20:47.529
+Benutzer, der immer das falsche eingibt,
+erneut ein m einzulesen.
+
+00:20:47.529 --> 00:20:52.580
+Ja, das heißt, wenn ich das erste mal von
+oben komme, dann lese ich hier an dieser
+
+00:20:52.580 --> 00:20:55.940
+Stelle tatsächlich das erste mal das m
+ein.
+
+00:20:55.940 --> 00:21:05.779
+Also m ist gleich io read int, ja, bitte eine
+ganze Zahl eingeben, die zwischen 1 und
+
+00:21:05.779 --> 00:21:10.010
+12 liegt.
+So, jetzt habe ich dieses m hier gerade
+
+00:21:10.010 --> 00:21:16.010
+bekommen und sie sehen diese Schleife,
+die habe ich jetzt, oder die wollen wir
+
+00:21:16.010 --> 00:21:23.450
+jetzt so bauen, dass wir sie immer wieder
+erneut durchlaufen, solange dieser
+
+00:21:23.450 --> 00:21:30.850
+Blödian eine falsche Antwort gibt. Und
+wenn endlich dieses m im richtigen
+
+00:21:30.850 --> 00:21:37.210
+Intervall liegt, geben wir uns zufrieden
+und verlassen die Schleife.
+
+00:21:37.419 --> 00:21:41.029
+So, jetzt schauen Sie nicht ins Skript,
+sondern überlegen Sie mal, was hier
+
+00:21:41.029 --> 00:21:45.080
+jetzt, fragen ihre Nachbarn, was muss an
+dieser Stelle jetzt für eine Bedingung
+
+00:21:45.080 --> 00:21:51.799
+stehen? Die Bedingung muss jetzt so sein,
+dass sie uns erneut in die Schleife
+
+00:21:51.799 --> 00:21:58.539
+schickt, wenn sie folgert: nee das kann
+ich immer noch nicht gebraucht.
+
+00:22:26.950 --> 00:22:33.940
+So!
+wer... wer meint er weiß welche
+
+00:22:33.940 --> 00:22:38.229
+Bedingungen da jetzt stehen muss? Sie haben jetzt genau ein Versuch.
+
+00:22:38.229 --> 00:22:51.699
+Ja... okay,  das war jetzt falsch. Also sagen sie nochmal, was sie gerade vorgeschlagen
+
+00:22:51.699 --> 00:22:57.309
+haben.
+m größer null und m kleiner x sagen wir mal
+
+00:22:57.309 --> 00:23:00.239
+12 oder von mir aus 13.
+
+00:23:00.389 --> 00:23:06.999
+Okay, m kleiner 13. Warum ist das falsch?
+Also wenn sie, wenn wird das hierhin
+
+00:23:06.999 --> 00:23:11.759
+schreiben, ja, 
+dann, wann, dann, erneut
+
+00:23:11.759 --> 00:23:16.299
+wann wird dann erneut ich Schleife
+gemacht? Die Schleife wird dann erneut
+
+00:23:16.299 --> 00:23:23.169
+gemacht, wenn m größer 0 und kleiner
+13 ist, das heißt gerade, wenn m in dem
+
+00:23:23.169 --> 00:23:29.729
+gültigen Bereich liegt, würden sie die
+Schleife erneut durchlaufen.
+
+00:23:32.129 --> 00:23:46.479
+Ja? Stattdessen muss... ja, also, hier muss stehen m kleiner 0 
+oder m größer 12. Ich reite da jetzt
+
+00:23:46.479 --> 00:23:50.649
+deswegen drauf rum, weil, was sie oben als
+erstes genannt haben, ist die klassische
+
+00:23:50.649 --> 00:23:56.199
+Antwort, die man nach 5 Sekunden gibt.
+und zwar deswegen, weil man immer meint,
+
+00:23:56.199 --> 00:24:06.099
+was hier unten steht, das wäre so eine
+Art Until, dass man sozusagen sagt - nicht 0
+
+00:24:06.099 --> 00:24:12.759
+1 - also was hier steht es nicht ein Until
+ist, also nicht eine Bedingung, von der
+
+00:24:12.759 --> 00:24:17.139
+wir hoffen, dass sie irgendwann mal
+eintritt, sondern was hier steht, ist die
+
+00:24:17.139 --> 00:24:23.949
+Bedingung, die uns erneut in die Schleife
+reinzwingt und deswegen,wenn er also
+
+00:24:23.949 --> 00:24:28.690
+hier beispielsweise 42 eingibt dann
+würden wir aufgrund dieser bedingung
+
+00:24:28.690 --> 00:24:33.849
+hier einen erneuten anlauf machen und
+würden jetzt also so lange immer wieder
+
+00:24:33.849 --> 00:24:43.320
+diesen befehl hier durchführen bis
+endlich mal, ja, dieses hier eintritt
+
+00:24:43.320 --> 00:24:46.750
+oder bis dies endlich mal nicht eintritt und
+dann können wir hier hinter die
+
+00:24:46.750 --> 00:25:00.040
+schleife gehen. Ja? Aber die frage war, was
+ist jetzt der Sinn der Do-While-Schleife,
+
+00:25:00.040 --> 00:25:06.910
+also, wir sind jetzt recht ähnlich, ist
+ganz klar, aber der große unterschied
+
+00:25:06.910 --> 00:25:13.270
+ist, dass bei der do-While-Schleife der rumpf
+einmal durchlaufen wird in jedem falle
+
+00:25:13.270 --> 00:25:17.790
+und dann wird das erste mal gefragt: wie war
+das denn jetzt überhaupt -
+
+00:25:17.790 --> 00:25:21.669
+also muss ich noch mal da rein und Sie
+sehen, dass für diese art der
+
+00:25:21.669 --> 00:25:27.190
+fragestellung, ja, dass gerade das
+richtige ist, weil Sie sozusagen diesen
+
+00:25:27.190 --> 00:25:30.610
+lesebefehl, den müssen Sie ja sowieso
+einmal machen
+
+00:25:30.610 --> 00:25:37.320
+ja, und danach erst fragen Sie, ob sie ihn
+erneut machen müssen ... ja...
+
+00:25:38.130 --> 00:25:43.660
+ich behaupte mal in 99 prozent oder in 95
+prozent aller fälle werden Sie ne
+
+00:25:43.660 --> 00:25:47.740
+While-Schleife verwenden, weil die
+irgendwie intuitiver zu verstehen ist,
+
+00:25:47.740 --> 00:25:51.850
+weil man erst am Anfang klärt, müssen
+wir hier einsteigen, ja,
+
+00:25:51.850 --> 00:25:58.290
+während hier wird immer am Ende erst
+geklärt, ja, ob sie nochmal rein müssen
+
+00:26:03.000 --> 00:26:08.050
+Ja, also wenn sie eine fingerübung suchen
+für heute Abend dann können sie
+
+00:26:08.050 --> 00:26:12.280
+versuchen ne While-Schleife in eine
+Do-While-Schleife umzuform und umgekehrt.
+
+00:26:12.280 --> 00:26:16.060
+Wenn wieder zusätzliche ifs einbauen,
+dann können sich das eine immer durch
+
+00:26:16.060 --> 00:26:23.110
+das andere simulieren.
+also While-Schleife und Do-While-Schleife
+
+00:26:23.110 --> 00:26:26.770
+habe ich jetzt hier an kleinen
+beispielen mal gezeigt und natürlich
+
+00:26:26.770 --> 00:26:30.610
+können sie solche Schleifen auch
+ineinander schachteln, ja, das heißt also
+
+00:26:30.610 --> 00:26:34.890
+in einer While-Schleife kann natürlich
+noch ne andere While-Schleife drin sein.
+
+00:26:34.890 --> 00:26:38.890
+Und das ganze kann dann noch mal in
+einer While-Schleife drin sein. Wir werden
+
+00:26:38.890 --> 00:26:43.860
+dann also mit der Zeit komplizierte
+Algorithmen kennenlernen.
+
+00:26:44.850 --> 00:26:54.270
+Okay, so, eine ganz wichtige Schleife ist
+die For-Schleife die viele Dinge
+
+00:26:54.270 --> 00:27:00.490
+besonders einfach formulieren lässt. Die
+For-Schleife sieht so aus: Sie haben die
+
+00:27:00.490 --> 00:27:09.520
+vokabel For,
+dann kommt so eine konstruktion und dann
+
+00:27:09.520 --> 00:27:15.580
+kommt in geschweiften klammern
+der Rumpf der For-Schleife. So, diese drei
+
+00:27:15.580 --> 00:27:22.810
+Abschnitte will ich noch mal kurz so
+andeuten, diese drei Abschnitte sind: die
+
+00:27:22.810 --> 00:27:28.560
+Initialisierung, eine Bedingung
+
+00:27:30.810 --> 00:27:39.310
+und der letzte Abschnitt
+hier ist das Inkrement. So, und ich
+
+00:27:39.310 --> 00:27:42.790
+glaube ich mache einfach sofort ein
+Beispiel, dann wird sicherlich klar, was
+
+00:27:42.790 --> 00:27:48.600
+eine For-Schleife macht: also For i gleich
+0,
+
+00:27:48.600 --> 00:27:52.840
+ich habe also jetzt irgendwie so eine
+Variable, die ich im Rumpf dieser
+
+00:27:52.840 --> 00:27:57.340
+Schleife verwenden möchte, das haben wir
+vorher auch gehabt und die können Sie
+
+00:27:57.340 --> 00:28:01.540
+hier einfach mit einem Statement
+initialisieren, das heißt also vor
+
+00:28:01.540 --> 00:28:06.130
+Beginn dieser Schleife, bevor überhaupt
+die das erste mal ausgeführt wird, wird
+
+00:28:06.130 --> 00:28:11.750
+die Variable i auf 0 gesetzt.
+Dann kommt eine Bedingung, die Sie
+
+00:28:11.750 --> 00:28:15.500
+früher in diese in die While-Bedingungen geschrieben haben, sagen wir mal
+
+00:28:15.500 --> 00:28:23.150
+i kleiner 100 und die Bedingung wird
+getestet, ob sie in die For-Schleife
+
+00:28:23.150 --> 00:28:29.210
+einsteigen sollen.
+Und hier hinten ist ein Inkrement, das
+
+00:28:29.210 --> 00:28:33.110
+bedeutet, wenn sie die For-Schleife
+durchlaufen haben, dann wird einmal das
+
+00:28:33.110 --> 00:28:39.070
+ausgeführt, was hier steht. Das ist jetzt
+irgendwie in gewisser Weise eine
+
+00:28:39.070 --> 00:28:45.049
+praktische Art ne While-Schleife zu
+kombinieren mit einer Initialisierung
+
+00:28:45.049 --> 00:28:48.580
+der Bedingung und das im Rumpf irgendwas
+passieren soll.
+
+00:28:48.580 --> 00:28:53.289
+So, stellen wir uns mal vor, ich möchte
+folgendes ausgeben: ich möchte alle
+
+00:28:53.289 --> 00:29:00.669
+Quadratzahlen von 0 bis 99 ausgeben
+also jeweils die Zahl und ihr Quadrat.
+
+00:29:00.669 --> 00:29:06.169
+Also: 0
+dazu die Quadratzahlen 0, 1 Quadratzahl
+
+00:29:06.169 --> 00:29:14.029
+ist 1, 2 ist 4, 3 ist 9, 4 ist 16 und so weiter...  so und
+dazu bietet sich jetzt diese Schleife
+
+00:29:14.029 --> 00:29:19.010
+hier an, weil ich fange an mich gleich
+0 das ist die erste Zahl die ich
+
+00:29:19.010 --> 00:29:24.799
+quartieren möchte und 100 wäre die
+letzte - die erste dich nicht quartieren
+
+00:29:24.799 --> 00:29:31.760
+soll -  also, das heißt hier läuft jetzt
+das i von null los bis 99, ja, denn nur wenn
+
+00:29:31.760 --> 00:29:35.029
+die kleiner als 100 ist, gehe ich noch
+mal in den Rumpf rein
+
+00:29:35.029 --> 00:29:40.250
+und wenn ich reingegangen bin und hab meine
+Hausaufgaben gemacht, dann kann ich am
+
+00:29:40.250 --> 00:29:45.320
+Ende i um 1 erhöhen.
+Jetzt möchte ich also drei Dinge dahin
+
+00:29:45.320 --> 00:29:50.950
+schreiben: ich möchte dass i schreiben,
+ich möchte schreiben zum Quadrat
+
+00:29:50.950 --> 00:29:56.450
+und dann möchte ich das i Quadrat
+schreiben. So, wie kriegt das hin? Was
+
+00:29:56.450 --> 00:30:03.580
+muss ich als erstes hierhin schreiben
+io print, was schreib ich da jetzt hin?
+
+00:30:04.090 --> 00:30:08.830
+Also da soll jetzt hin - da sind so Zeilen,
+ja, da steht dann irgendwie 7 zum Quadrat
+
+00:30:08.830 --> 00:30:12.490
+ist 49.
+Und das muss ich jetzt irgendwie mit
+
+00:30:12.490 --> 00:30:16.710
+drei print Befehlen hinkriegen.
+
+00:30:19.950 --> 00:30:24.510
+Ja, als erstes müssen wir i ausgeben, ja,
+
+00:30:25.110 --> 00:30:32.710
+IO print i, so und print sage ich und nicht
+println, weil wir möchten gerne, dass das
+
+00:30:32.710 --> 00:30:40.659
+irgendwie so in einer zeile steht. 7
+zum quadrat ist gleich 49, ja, so soll das
+
+00:30:40.659 --> 00:30:53.020
+hinterher aussehen
+7 zum quadrat ist gleich 49. 8 zum
+
+00:30:53.020 --> 00:30:59.620
+quadrat ist 64. 9 zum quadrat ist ein 81.
+Solche Zeilen möchten wir schreiben.
+
+00:30:59.620 --> 00:31:04.169
+Also erst kommt das i, was kommt dann? ja
+
+00:31:09.029 --> 00:31:14.159
+So und jetzt muss ich natürlich in
+gänsefüßchen, ja, weil ich ja jetzt
+
+00:31:14.159 --> 00:31:19.210
+wörtliche rede habe, ja, also ich hab
+jetzt gänsefüßchen, jetzt kommt hier
+
+00:31:19.210 --> 00:31:24.669
+ein Blank, ein Zwischenraum, damit dieses
+Wort was sie jetzt hier schreiben wollen
+
+00:31:24.669 --> 00:31:29.250
+nicht unmittelbar hinter der Zahl klebt,
+ja, und was schreibe ich da jetzt hin,
+
+00:31:29.250 --> 00:31:36.570
+ja das schreibe ich jetzt hin: zum Quadrat,
+
+00:31:36.720 --> 00:31:41.590
+nochmal ein leerzeichen und dann ist gleich
+oder nochmal leerzeichen und dann
+
+00:31:41.590 --> 00:31:56.140
+gänsefüßchen semikolon. So, was kommt
+jetzt?  Ja,  IO und jetzt machen wir nen println, ja, weil wir ja
+
+00:31:56.140 --> 00:32:10.860
+nach der 49, wollen wir auf eine neue
+Zeile. I mal i, fertig. Also, die For-Schleife
+
+00:32:10.860 --> 00:32:18.220
+ist sozusagen eine While-Schleife wo
+dieses hier die Bedingung ist, aber wo
+
+00:32:18.220 --> 00:32:23.830
+wir die übliche initialisierung, die wir
+vor der While-Schleife machen, hier mit
+
+00:32:23.830 --> 00:32:30.039
+reinpacken können und wo wir auch die
+typische Veränderung im Rumpf dieser
+
+00:32:30.039 --> 00:32:35.020
+Schleife an der Variable, die immer
+wieder hier getestet, wird auch direkt
+
+00:32:35.020 --> 00:32:40.210
+hier reinschreiben können. So und dieses
+Programm druckt also jetzt irgendwie...
+
+00:32:40.210 --> 00:32:44.649
+fängt an mit 0 zum quadrat ist 0, 1 zum
+quadrat ist 1 und so weiter.
+
+00:32:44.649 --> 00:32:48.630
+So, jetzt hat dieses Programm ein
+Schönheitsfehler,
+
+00:32:48.630 --> 00:32:55.090
+die die schon programmiert haben, ja,
+werden jetzt wissen, dass die das
+
+00:32:55.090 --> 00:32:59.350
+Ergebnis hier nicht ganz so hübsch
+aussieht, wie wir das eigentlich erwarten.
+
+00:32:59.350 --> 00:33:03.149
+An welcher Stelle wird uns das nicht
+gefallen?
+
+00:33:03.149 --> 00:33:11.260
+Ja... ja, die zahlen stehen hier jetzt nicht
+bündig untereinander das liegt daran,
+
+00:33:11.260 --> 00:33:15.970
+wenn wir einfach unser print verwenden,
+so wie es hier steht und so wie es da
+
+00:33:15.970 --> 00:33:22.059
+steht, dann nimmt Java für die Ausgabe
+genau so viel platz wie unbedingt nötig
+
+00:33:22.059 --> 00:33:27.549
+ist, um diesen wert darzustellen. Ja, das
+heißt also, wenn wir, wenn wir sagen mal
+
+00:33:27.549 --> 00:33:32.549
+den Übergang machen von drei zum
+quadrat ist 9
+
+00:33:32.549 --> 00:33:37.539
+entweder so verstehen und dann kommen
+vier zum quadrat ist 16, dann wird das so
+
+00:33:37.539 --> 00:33:43.539
+stehen und dann 5 zum quadrat ist 25
+das heißt also die zahlen werden nicht
+
+00:33:43.539 --> 00:33:47.100
+so untereinander geschrieben, wie wir das
+eigentlich gewohnt sind, tabellarisch,
+
+00:33:47.100 --> 00:33:52.450
+sondern wir werden so geschrieben, wie
+sie eben Platz brauchen, um in diese
+
+00:33:52.450 --> 00:33:59.620
+Zeile gequetscht zu werden. Sehen alle das
+Problem? Ja, also auch vorne,
+
+00:33:59.620 --> 00:34:04.390
+auch vorne sind diese Zahlen hier, dieses
+erste i, wird also nur soviel Platz
+
+00:34:04.390 --> 00:34:10.060
+bekommen, wie es wirklich braucht und das
+bedeutet also, dass, wenn das i wenn es über
+
+00:34:10.060 --> 00:34:14.980
+zehn springt, steht es nicht richtig
+bündig untereinander. So, jetzt kommen
+
+00:34:14.980 --> 00:34:20.080
+die sagenumwobenen Osnabrücker Algo-Tools
+und da können Sie jetzt folgendes
+
+00:34:20.080 --> 00:34:25.270
+machen:
+Sie können in der Methode print nicht
+
+00:34:25.270 --> 00:34:31.450
+nur angeben, was geprinted werden soll,
+sondern auch auf die vorstellen das
+
+00:34:31.450 --> 00:34:34.659
+geprinted werden soll.
+Das heißt, wenn ich hier jetzt nur sechs
+
+00:34:34.659 --> 00:34:41.679
+angeben das beispiel und hier hinten auch eine
+6 beispielsweise, dann würde für das
+
+00:34:41.679 --> 00:34:49.929
+Ergebnis immer sechs Stellen gebraucht,
+das heißt also hier würde sowas stehen
+
+00:34:49.929 --> 00:34:57.210
+ja Blank, Blank, Blank, Blank, Blank, 9 und
+dann kommt: Blank, Blank, Blank, Blank, 16,
+
+00:34:57.210 --> 00:35:03.970
+weil sie hier angefordert haben, dass
+ihre Ausgabe für dieses, für diesen
+
+00:35:03.970 --> 00:35:11.410
+Print-Befehl immer sechs Zeichen, sechs
+Stellen lang ist und die werden dann von
+
+00:35:11.410 --> 00:35:20.820
+Java rechtsbündig mit dem... der decimal
+darstellung der ganzen zahl aufgefüllt
+
+00:35:24.500 --> 00:35:33.900
+ja, ja, ja, da hat... die Frage hab ich befürchtet...
+also wenn sie jetzt hier nur sechs
+
+00:35:33.900 --> 00:35:38.040
+stellen sich gewünscht haben und die
+zahl braucht aber 7,
+
+00:35:38.040 --> 00:35:41.910
+dann wird nichts abgeschnitten, sondern
+dann quetscht er einfach diese sieben
+
+00:35:41.910 --> 00:35:47.310
+Zahlen beginnend an der Stelle, wo eigentlich
+diese sechs sein sollen, und verlängert
+
+00:35:47.310 --> 00:35:52.109
+dann eben doch hinten die Ausgabe auf
+insgesamt sieben, ja, was soll der arme Kerl auch
+
+00:35:52.109 --> 00:36:08.579
+sonst machen. Ja, ja... Also: die Frage war eine Zahl,
+die weniger als sechs Stellen braucht, ja,
+
+00:36:08.579 --> 00:36:14.760
+wie wird die vorne aufgefüllt mit Blanks,
+also dies soll hier einfach andeuten, da
+
+00:36:14.760 --> 00:36:20.310
+ist ein platz auf ihrem Terminal oder
+auf ihrem Drucker oder auf ihrem Plotter, so
+
+00:36:20.310 --> 00:36:24.780
+dass jetzt hier sozusagen entsprechend
+viel Leerraum ist und dann kommt da
+
+00:36:24.780 --> 00:36:29.700
+hinten die Ziffer, sodass jetzt, wenn hier
+alle diese Zahlen sind, ja, wenn sie hier
+
+00:36:29.700 --> 00:36:36.839
+was weiß ich
+10 mal 10 ist 100 dann haben sie 123456 so
+
+00:36:36.839 --> 00:36:39.839
+würde dann die 100 da stehen. Alle
+Zahlen stehen
+
+00:36:39.839 --> 00:36:45.050
+tabellarisch untereinander, gemäß ihrem
+Stellenwert.
+
+00:36:47.690 --> 00:36:55.589
+Okay, so While-Schleife, Do-While-Schleife, For-Schleife wollen wir die jetzt noch mal für
+
+00:36:55.589 --> 00:37:03.750
+ein gängiges Problem der Informatik
+benutzen und zwar ist das das Problem
+
+00:37:03.750 --> 00:37:14.609
+der Fakultät und das wiederum ist eine
+mathematische Funktionen, die... der wir
+
+00:37:14.609 --> 00:37:19.680
+begegnen, wenn wir die Zahl der Permutationen ausrechnen, die wir mit n
+
+00:37:19.680 --> 00:37:24.540
+Objekten zu Wege bringen.
+Stellen Sie sich vor, sie haben also
+
+00:37:24.540 --> 00:37:30.300
+bunte Würfel und überlegen in
+wievielen Reihenfolgen können sie diese
+
+00:37:30.300 --> 00:37:36.000
+Würfel anordnet? Nehmen wir mal an, Sie
+hätten nur einen Würfel: wieviele
+
+00:37:36.000 --> 00:37:40.080
+Möglichkeiten... ja, Fangfrage, wie viele möglichkeiten gibt es
+
+00:37:40.080 --> 00:37:43.160
+einen Würfel anzuordnen?
+
+00:37:49.220 --> 00:37:56.310
+das ist jetzt eine ganz originelle
+antwort. Also ich habe ein Objekt, das ist
+
+00:37:56.310 --> 00:38:00.090
+jetzt... das kann jetzt eine Kugel sein
+oder ein Würfel oder wie auch immer und
+
+00:38:00.090 --> 00:38:07.290
+die Frage ist, in wie viele Reihenfolge
+kann ich das bringen? Eine, ja, ich deute das mal
+
+00:38:07.290 --> 00:38:10.170
+so an, ich habe irgendwie diesen einen
+Würfel,
+
+00:38:10.170 --> 00:38:14.280
+sie haben jetzt an einen Würfel gedacht?
+ja... der Würfel war jetzt hier einfach
+
+00:38:14.280 --> 00:38:18.960
+nur ein Objekt. So, ich hab jetzt also
+diesen einen Würfel
+
+00:38:18.960 --> 00:38:22.770
+da steht ein A drauf, damit ich den von
+den anderen unterscheiden kann und da
+
+00:38:22.770 --> 00:38:27.330
+gibt es jetzt eine Möglichkeit mit den
+anordnen kann so jetzt kommt der zweite
+
+00:38:27.330 --> 00:38:31.740
+Würfel dazu. Wieviele Möglichkeiten
+gibt es zwei Würfel anzuordnen?
+
+00:38:31.740 --> 00:38:39.570
+der eine Würfel heißt A und der andere
+heißt B. Zwei! Nämlich, erst der eine und
+
+00:38:39.570 --> 00:38:44.840
+dann der andere oder erst der andere und
+an der eine.
+
+00:38:46.250 --> 00:38:49.770
+Wenn sie eine rote Kugel haben und eine
+blaue Kugel, dann gibt zwei
+
+00:38:49.770 --> 00:38:53.970
+Möglichkeiten wie sie die anordnen
+können auf einer Perlenkette: erst die
+
+00:38:53.970 --> 00:38:57.780
+rote dann die blaue oder umgekehrt. 
+so jetzt wird's spannend, jetzt haben wir
+
+00:38:57.780 --> 00:39:04.020
+drei Würfel. Wieviele Möglichkeiten
+gibt es drei Würfel anzuordnen? Sechs.
+
+00:39:04.020 --> 00:39:07.490
+Wollen Sie mir die mal gerade nennen!
+
+00:39:13.319 --> 00:39:27.699
+Moment mal langsam: B BCA  so jetzt... genau!
+das sind die sechs Möglichkeiten drei
+
+00:39:27.699 --> 00:39:31.420
+Würfel anzuordnen.
+So, wenn wir das mal mitzählen: hier
+
+00:39:31.420 --> 00:39:38.829
+hatten wir eins, hier hatten wir 2, ja, hier haben wir sechs. So,
+jetzt - ich mal sie jetzt nicht mehr alle an
+
+00:39:38.829 --> 00:39:44.709
+das sind mir dann zu viel. jetzt kommt
+noch ein vierter Würfel dazu: kann man
+
+00:39:44.709 --> 00:39:51.489
+sich irgendwie überlegen, wie viel mehr
+die Zahl der Permutationen wird: wenn da
+
+00:39:51.489 --> 00:39:57.279
+noch einer dazu kommt. also, wenn wir hier
+bei diesen mit dreien, wenn wir die alle
+
+00:39:57.279 --> 00:40:02.619
+angeordnet haben jetzt kommt also ein
+vierter Würfel dazu, an wieviel Stellen
+
+00:40:02.619 --> 00:40:07.869
+kann dieser vierte Würfel jetzt bei allen
+diesem Anordnungen noch dazu gequetscht
+
+00:40:07.869 --> 00:40:11.650
+werden?
+An wieviel Position könnte der dazu
+
+00:40:11.650 --> 00:40:20.920
+kommen und bietet, bildet dadurch immer
+neue Anordnung? Die Antwort ist richtig,
+
+00:40:20.920 --> 00:40:24.579
+aber ich wollte erstmal jetzt wissen, an wieviel Stellen können sie praktisch
+
+00:40:24.579 --> 00:40:29.489
+den neuen, also der neue Würfel, der soll
+jetzt einfach mal gelb sein.
+
+00:40:29.489 --> 00:40:36.009
+und wenn sie das vorhandene Muster hier
+nehmen dies ABC an wie feststellen
+
+00:40:36.009 --> 00:40:38.650
+können sich jetzt in neuen Würfel
+irgendwie hin quetschen?
+
+00:40:38.650 --> 00:40:45.729
+An 4. Also der könnte nämlich hier sein,
+dann steht da DABC oder aber er
+
+00:40:45.729 --> 00:40:50.589
+könnte hier seien, dann hätten sie a d
+b c oder er könnte hier sei, dann
+
+00:40:50.589 --> 00:40:55.619
+hätten sie abdc oder könnt ihr hinten
+sein, hätten sie a b c d.
+
+00:40:55.619 --> 00:41:02.469
+das heißt also der Übergang von drei
+Würfeln zu vier Würfeln verursacht
+
+00:41:02.469 --> 00:41:08.650
+eine Vervierfachung der Permutationen,
+weil alle diese Permutation, die sich
+
+00:41:08.650 --> 00:41:16.119
+schon haben, ja, können sie benutzen, um
+daraus vier neue zu machen, sodass jetzt,
+
+00:41:16.119 --> 00:41:23.350
+wie gerade schon vermutet wurde, ABCD, ABDC und so weiter, ich schreib sie nicht alle
+
+00:41:23.350 --> 00:41:29.230
+hin, aber wir kommen dann auf insgesamt
+24 Möglichkeiten, wie man vier Würfel
+
+00:41:29.230 --> 00:41:31.950
+anordnen kann.
+
+00:41:32.250 --> 00:41:37.900
+So, wer sieht jetzt die Gesetzmäßigkeit?
+Also wie verändert sich also die zahl
+
+00:41:37.900 --> 00:41:42.940
+der Permutation? Ja, das nennt man n-
+Fakultät, aber sagen sie erst mal welche
+
+00:41:42.940 --> 00:41:51.180
+mathematische... wie geht eine eine zahl
+hier aus der Vorgängerzahl hervor? ja...
+
+00:41:54.000 --> 00:41:58.240
+Genau, wir müssen also immer wieder mal
+nehmen. Ja, also die nächste Zahl hier
+
+00:41:58.240 --> 00:42:07.510
+wäre jetzt 120. Das n-Fakultät würden
+wir jetzt mathematisch wie folgt
+
+00:42:07.510 --> 00:42:16.750
+definieren. Kraft autoritärer Willkür
+setzen wir n-Fakultät auf 1 wenn n 0 ist.
+
+00:42:16.750 --> 00:42:19.540
+Werden Sie jetzt sagen, das leuchtet mir
+nicht ein.
+
+00:42:19.540 --> 00:42:28.030
+Egal, es ist aber so. Ja, also wenn
+überhaupt keine Würfel haben, dann wird,
+
+00:42:28.030 --> 00:42:31.720
+das wird sich später herausstellen, das
+ist einfach praktisch, dann wird einfach
+
+00:42:31.720 --> 00:42:36.760
+festgesetzt die Anzahl der Permutationen,
+die man machen kann, aber nix zu
+
+00:42:36.760 --> 00:42:41.860
+anzuordnen hat ist 1. Da ist einfach jetzt jetzt eine
+mathematische Festsetzung. So und was steht
+
+00:42:41.860 --> 00:42:50.610
+jetzt hier unten bei sonst? Bei sonst
+steht also jetzt ein mal zwei mal drei mal n.
+
+00:42:55.370 --> 00:42:59.880
+Das ist also jetzt die Definition, ja,
+bitte merken,
+
+00:42:59.880 --> 00:43:05.070
+die werden sie also immer wieder neben dem Logarithmus immer wieder in der
+
+00:43:05.070 --> 00:43:13.730
+vorlesung hier beobachten. n-Fakultät
+ist das Produkt der ersten n Zahlen. Und eine...
+
+00:43:13.730 --> 00:43:19.290
+ein Zusammenhang mit Anwendungen ist
+eben, das ist die Zahl der Anordnungen,
+
+00:43:19.290 --> 00:43:24.150
+die sie bilden können.
+Ja, wenn sie beispielsweise bei der
+
+00:43:24.150 --> 00:43:31.520
+Spedition Hellmann in Osnabrück morgens
+die Tour zusammenstellen sollten und der
+
+00:43:31.520 --> 00:43:36.630
+Lkw-fahrer der hätte jetzt
+beispielsweise 42 Kunden, die er anfahren muss,
+
+00:43:36.630 --> 00:43:41.820
+dann muss er diese 42 kunden in eine
+bestimmte Reihenfolge bringen. Fährt
+
+00:43:41.820 --> 00:43:46.710
+erst zu Susi Sorglos und dann zu Willi
+Wacker oder fährt er erst zu Willi Wacker
+
+00:43:46.710 --> 00:43:53.420
+und dann fährt er noch und so weiter... so
+wenn ich 42 Kunden habe, dann gibt es 42
+
+00:43:53.420 --> 00:44:01.620
+Fakultät viele Möglichkeiten, wie ich
+die in eine Reihenfolge bringen, ja, so,
+
+00:44:01.620 --> 00:44:08.100
+also noch mal wenn ich da die Tabelle
+aufstelle n und n-Fakultät, ja, wenn n 0
+
+00:44:08.100 --> 00:44:13.260
+ist n-fakultät 1, wenn n eins ist es in
+fakultät 1, wenn n zwei ist
+
+00:44:13.260 --> 00:44:23.670
+N-Fakultät 2, wenn n 3 ist n-Fakultät 6, 4 ist
+24, 5 ist 120, was kommt bei 6 hin? Was ist
+
+00:44:23.670 --> 00:44:32.660
+6 fakultät? Ja? 720. Ja, und so weiter, also die
+Funktion die wächst extrem schnell.
+
+00:44:33.650 --> 00:44:39.990
+So, jetzt schauen sie mal bitte auf diese
+Zeile and Fakultät ist ein mal zwei mal
+
+00:44:39.990 --> 00:44:45.480
+drei mal n. Welche von den Schleifen, die
+ich gerade besprochen habe, bietet sich
+
+00:44:45.480 --> 00:44:52.530
+hier förmlich an,
+um n-Fakultät zu berechnen? Wir müssen ein mal,
+
+00:44:52.530 --> 00:44:59.420
+zwei mal 3 und so weiter... welche Schleife
+bietet sich an? Ja, eine For-Schleife.
+
+00:44:59.420 --> 00:45:05.070
+Wir brauchen jetzt eine For-Schleife, in
+der wir im Rumpf was immer tun?
+
+00:45:05.070 --> 00:45:09.390
+Wir können jetzt nicht in
+hinschreiben ein mal zwei mal 3 und so
+
+00:45:09.390 --> 00:45:13.730
+weiter, weil wir kennen ja das n nicht.
+Wir lesen ja  das  n ein, ja.
+
+00:45:13.730 --> 00:45:19.040
+also die situation ist jetzt praktisch
+die folgende: wir haben hier n ist gleich IO
+
+00:45:19.040 --> 00:45:25.070
+read int,  bitte geben Sie doch eine ganze
+Zahl ein und jetzt wollen wir n-Fakultät
+
+00:45:25.070 --> 00:45:38.970
+errechnet. So und unsere Rechenidee ist
+es ein mal, zwei mal, drei mal, vier und so
+
+00:45:38.970 --> 00:45:45.330
+weiter bis mal n zu machen. So, wie viel
+Variablen brauchen wir jetzt, um das
+
+00:45:45.330 --> 00:45:50.940
+irgendwie hinzukriegen? Ja... ja, nämlich wo
+sind die jetzt da die beiden Variablen?
+
+00:45:50.940 --> 00:45:53.060
+ja
+
+00:46:02.870 --> 00:46:10.850
+wir haben ein, wir haben eine variable,
+die wir hoch zählen, ja, die variable würde
+
+00:46:10.850 --> 00:46:17.840
+also diese werte hier durchlaufen,
+ja, das schlagen sie und ist richtig. Also nennen... also
+
+00:46:17.840 --> 00:46:22.400
+die für mich jetzt mal i nennen. i müsste
+also nacheinander welche Werte
+
+00:46:22.400 --> 00:46:25.060
+durchlaufen?
+
+00:46:26.110 --> 00:46:35.150
+1,2, 3 und so weiter bis n. Ja, so wie
+lautet denn eine For-Schleife in der
+
+00:46:35.150 --> 00:46:40.640
+eine Variable nacheinander die werte 1,2,3
+und so weiter bis n durchläuft? Wie
+
+00:46:40.640 --> 00:46:53.000
+lautet die For-Schleife? Ja, also...  watt? Wie lautet die For-Schleife, die nacheinander
+
+00:46:53.000 --> 00:47:00.350
+die werte 1,2,3 und so weiter bis n
+durchläuft? Womit fängt sie an? Mit 1
+
+00:47:00.350 --> 00:47:06.560
+also: for i gleich 1.
+Wie lautet die Bedingung, die uns immer
+
+00:47:06.560 --> 00:47:13.090
+noch erlaubt ein weiteres mal in den
+Rumpf der Schleife einzusteigen? Ja?
+
+00:47:13.420 --> 00:47:24.530
+i kleiner gleichen n. Wie lautet das in
+Inkrement, nachdem wir hier irgendwas
+
+00:47:24.530 --> 00:47:31.550
+getan haben? Ja? i++. Also, Sie sehen dieses
+ist hier so eine der schönsten For-
+
+00:47:31.550 --> 00:47:37.220
+Schleifen, die wir uns denken können.
+Wir fangen mit 1 an ,wir enden bei n und wenn wir
+
+00:47:37.220 --> 00:47:39.530
+jetzt etwas getan haben, wird i um 1
+erhöht.
+
+00:47:39.530 --> 00:47:44.870
+so jetzt kommt der spannende Teil: jedes
+mal wenn wir jetzt hier im Rumpf dieser
+
+00:47:44.870 --> 00:47:50.630
+Schleife sind, müssen wir etwas tun und
+zwar wir arbeiten an diesem monster
+
+00:47:50.630 --> 00:47:56.900
+produkt. wir müssen dieses Produkt
+schrittweise immer größer machen. Nehme
+
+00:47:56.900 --> 00:48:04.120
+mal an wir hätten eine Variable f für
+Fakultät, in der wert dieses Produkt so
+
+00:48:04.120 --> 00:48:08.560
+aufsammeln...
+Womit wird dieses f zunächst mal
+
+00:48:08.560 --> 00:48:14.680
+initialisiert, damit wir mit dem
+aufsammeln anfangen können?
+
+00:48:15.000 --> 00:48:24.330
+Ja mit 1. Also hier würden wir hin
+schreiben f ist gleich 1. Und was steht
+
+00:48:24.330 --> 00:48:32.250
+jetzt hier im Rumpf? Im Rumpf müssen wir
+also davon ausgehen, dass wir in dem f
+
+00:48:32.250 --> 00:48:39.390
+schon einiges angesammelt haben,
+ja, und dass wir es jetzt um eine weitere
+
+00:48:39.390 --> 00:48:47.850
+Multiplikation vergrößern also? sagen
+sie wir die normale Schreibweise. f ist
+
+00:48:47.850 --> 00:48:55.500
+gleich f mal i. Ist das allen klar?
+Also wer schon in der schule
+
+00:48:55.500 --> 00:49:02.330
+programmiert hat für den ist das jetzt
+trivial. Wer jetzt neue ist, muss... wird jetzt kurz
+
+00:49:02.330 --> 00:49:08.010
+schlucken, aber wird dann hoffentlich einsehen, was hier passiert ist, eben das
+
+00:49:08.010 --> 00:49:13.860
+folgende: im dem f hat sich jetzt schon
+beispielsweise die zahl 24 angesammelt,
+
+00:49:13.860 --> 00:49:18.650
+weil wir nicht schon ein mal, zwei mal,
+drei mal vier gemacht haben.
+
+00:49:18.650 --> 00:49:25.680
+Jetzt ist in dem f die 24 drin und jetzt
+wird i auf fünf erhöht und jetzt
+
+00:49:25.680 --> 00:49:30.480
+wird 24 mal fünf genommen und das ganze
+wird jetzt an die 100... an das f wieder
+
+00:49:30.480 --> 00:49:35.940
+überwiesen und dann ist in dem f 120 drin. Das heißt also hier in diesem f ist gleich
+
+00:49:35.940 --> 00:49:41.400
+f mal i,  ja, da machen wir genau das, was
+hier steht, aber dieses ist jetzt eine
+
+00:49:41.400 --> 00:49:45.510
+mathematische Definition, dieses ist ja
+kein Algorithmus. Das ist das, was die
+
+00:49:45.510 --> 00:49:49.350
+Mathematik von der Informatik
+unterscheidet. Die Mathematik beschreibt
+
+00:49:49.350 --> 00:49:54.360
+statische Zusammenhänge und die
+Informatik formuliert Algorithmen. Wir
+
+00:49:54.360 --> 00:49:59.850
+müssen also jetzt diese Definition in
+eine Schleife umbauen und die Schleife
+
+00:49:59.850 --> 00:50:02.490
+tastet sich hier von links nach rechts
+gehend
+
+00:50:02.490 --> 00:50:07.950
+durch fortwährende Multiplikation da
+heran. Und wenn wir also jetzt immer wieder
+
+00:50:07.950 --> 00:50:12.210
+f ist gleich f, mal i gemacht haben und
+wir kommen jetzt hier hin, wo steht jetzt
+
+00:50:12.210 --> 00:50:16.790
+die Fakultät drin?
+IO println,
+
+00:50:16.790 --> 00:50:20.400
+ja, also jetzt könnten wir...  hier könnten wir,
+nehmen wir an, ich wollte jetzt den Satz
+
+00:50:20.400 --> 00:50:26.570
+schreiben n-Fakultät ist gleich? Was
+müsste ich jetzt hier schreiben?
+
+00:50:28.220 --> 00:50:36.030
+Also das Ergebnis: ich schreib's mal hierhin
+soll etwa so aussehen, ja: 4... 4 fakultät
+
+00:50:36.030 --> 00:50:41.940
+ist gleich 24. So etwas soll da stehen. So,
+was muss ich aber jetzt hier hin
+
+00:50:41.940 --> 00:50:55.700
+schreiben? Ich... das  kriege ich... ja? Also ich gebe
+erstmal das n aus, ja, und dann kommt das
+
+00:50:55.700 --> 00:51:03.900
+Anführungsstreifen... anführungs... als die Gänsefüßchen und dann das Ausrufezeichen,
+
+00:51:03.900 --> 00:51:09.720
+ja, dann kommt dieses gleich und dann
+kommt ein blank und dann kommt wieder
+
+00:51:09.720 --> 00:51:20.850
+Gänsefüßchen und dann kleben wir
+jetzt was hinten an? das f. Ja. Hier haben uns
+
+00:51:20.850 --> 00:51:23.490
+jetzt nicht um die Formatierung
+gekümmert, weil wir ja hier jetzt nicht
+
+00:51:23.490 --> 00:51:27.660
+der Tabelle machen, sondern wir machen
+eine Ausgabe. Wir lesen das n ein und
+
+00:51:27.660 --> 00:51:41.820
+spucken jetzt das n-Fakultät aus. Okay... so...
+jetzt wollen wir das selbe mit ner While-Schleife lösen.
+
+00:51:41.820 --> 00:51:58.040
+Ja? Frage? Ja, also sie können in einem
+print die ihn aus... die Ausgabe
+
+00:51:58.040 --> 00:52:05.480
+zusammenbasteln - zusammenkleben
+ja, indem sie strings und zahlen
+
+00:52:05.480 --> 00:52:11.550
+kombinieren mit so einem Pluszeichen.
+Dieses Plus macht das folgende: es
+
+00:52:11.550 --> 00:52:18.780
+wandelt dieses hier in eine Dezimalschreibweise um und
+klebt es vor dieses hier, was wörtlich zu
+
+00:52:18.780 --> 00:52:22.530
+nehmen ist und dann wandelt es das f
+in eine Dezimalschreibweise um und
+
+00:52:22.530 --> 00:52:27.330
+klebt es dann dahinter, ja? Also dieses Plus
+ist jetzt nicht ein arithmetisches Plus,
+
+00:52:27.330 --> 00:52:31.890
+sondern wenn auf einer der beiden Seiten
+von dem Plus ein String steht, dann wird
+
+00:52:31.890 --> 00:52:34.860
+die andere Seite auch zu einem String
+gemacht und die werden dann aneinander
+
+00:52:34.860 --> 00:52:38.729
+geklebt.
+So jetzt möchten wir also die Fakultät
+
+00:52:38.729 --> 00:52:43.469
+berechnen mit einer While-Schleifen. Ja, das
+heißt also wir würden folgendes machen:
+
+00:52:43.469 --> 00:52:47.089
+wir lesen jetzt wieder das n ein.
+
+00:52:47.630 --> 00:52:53.219
+Ja, bitte eine ganze zahl und jetzt möchten
+wir schließlich das n-Fakultät
+
+00:52:53.219 --> 00:52:58.349
+berechnen, aber aus unerfindlichen
+Gründen ist jetzt die For-Schleife
+
+00:52:58.349 --> 00:53:00.950
+verboten.
+
+00:53:01.789 --> 00:53:05.450
+Was müssen wir jetzt tun?
+
+00:53:06.200 --> 00:53:10.469
+zunächst mal in dem Rumpf - also wir
+haben eine While-Schleife -
+
+00:53:10.469 --> 00:53:17.249
+ja? Und was muss jetzt in den Rumpf der
+Schleife auf jeden Fall sein? Das sollten
+
+00:53:17.249 --> 00:53:25.140
+wir vielleicht als erstes da mal rein
+schreiben... ja... ja, also da muss irgendwie
+
+00:53:25.140 --> 00:53:28.709
+dass i höher gezählt werden, weil das
+macht ja jetzt was While nicht mehr von
+
+00:53:28.709 --> 00:53:32.509
+selbst,
+aber was muss vorher noch passieren?
+
+00:53:32.509 --> 00:53:38.789
+Genau, f ist gleich f mal i, das muss
+natürlich auch passieren, genauso in das
+
+00:53:38.789 --> 00:53:44.449
+hier gemacht haben. So, was ist jetzt die
+Bedingung, wie lange machen wir das ganze?
+
+00:53:44.449 --> 00:53:50.670
+Was steht da jetzt also für eine
+Bedingung? Ja? genau
+
+00:53:50.670 --> 00:53:54.749
+i kleiner gleich n. Ja, da steht jetzt
+dieselbe Bedingung, die hier bei dem
+
+00:53:54.749 --> 00:53:59.569
+For steht.
+So, aber was ist jetzt noch noch zu tun?
+
+00:53:59.569 --> 00:54:06.329
+Ja? Ja, wir müssen also i initialisieren,
+weil die While-Schleife hat jetzt keine
+
+00:54:06.329 --> 00:54:10.440
+Möglichkeit, irgendwelche Variablen zu
+initialisieren, dafür müssen wir also
+
+00:54:10.440 --> 00:54:16.499
+selbst sorgen: ja, i ist gleich 1. und? Wer
+muss noch installiert werden, f muss
+
+00:54:16.499 --> 00:54:23.039
+auch auf 1 gesetzt werden. Bei solchen
+Schleifen müssen sie auch immer
+
+00:54:23.039 --> 00:54:26.309
+aufpassen, wenn sie jetzt hier
+beispielsweise versehen ich f auf null
+
+00:54:26.309 --> 00:54:32.459
+setzen, ja, dann kommt natürlich nicht
+aus dem quark weil f, wenn f einmal 0 ist,
+
+00:54:32.459 --> 00:54:35.339
+können sie das so viel dran
+multiplizieren, wir sie wollen, da bleibt
+
+00:54:35.339 --> 00:54:38.299
+natürlich auf der 0.
+
+00:54:41.590 --> 00:54:48.150
+So, das heißt wir setzen i auf 1 und
+dann sagen wir ist i kleiner gleich n,
+
+00:54:48.150 --> 00:54:52.440
+wenn das der fall ist, gehen wir da rein.
+
+00:54:52.650 --> 00:55:00.600
+Was passiert denn übrigens, wenn i, wenn
+die eingelesene zahl ß ist?
+
+00:55:00.600 --> 00:55:07.380
+Was passiert dann mit dieser While-
+Schleife? Die eingelesene Zahl 0 ist,
+
+00:55:07.380 --> 00:55:15.310
+was macht dann diese schleife? Ja? Die
+Schleife wird gar nicht ausgeführt. Ist
+
+00:55:15.310 --> 00:55:24.730
+das schlecht für unser Ergebnis? Genau,
+also das ist nicht schlimm, weil wir
+
+00:55:24.730 --> 00:55:29.140
+hatten eher das Ergebnis sie auf eins
+gesetzt und selbst wenn wir jetzt gar nicht
+
+00:55:29.140 --> 00:55:33.520
+durch die Schleife laufen, ist das
+Ergebnis ist in dem f und 0 fakultät ist
+
+00:55:33.520 --> 00:55:38.350
+eins, ist also alles im grünen Bereich.
+Ja, das heißt also am Ende der Schleife
+
+00:55:38.350 --> 00:55:45.480
+können wir mit print f, können wir die
+Fakultät ausgeben.
+
+00:55:45.480 --> 00:55:51.430
+so, jetzt wollen wir das selber auch noch
+mal mit ner Do-While-Schleife machen:
+
+00:55:51.430 --> 00:55:58.000
+ja, n ist gleich io read int. wir lesen
+ also jetzt die Zahl ein
+
+00:55:58.000 --> 00:56:03.460
+und jetzt machen wir hier ein Do, also
+nicht dass es jetzt für dieses problem
+
+00:56:03.460 --> 00:56:09.370
+eine gute idee wäre, aber wir wollen
+jetzt einfach mal ne Do-While-Schleife
+
+00:56:09.370 --> 00:56:13.990
+benutzen, weil die sonst so
+stiefmütterlich in der ecke liegt, ja,
+
+00:56:13.990 --> 00:56:26.170
+also: Do ... While, was muss hier ihnen drin
+auf jeden fall wieder passieren? damit
+
+00:56:26.170 --> 00:56:34.630
+wir uns an die fakultät... ja? genau f ist gleich f mal i,  das gehörte auf jeden fall rein
+
+00:56:34.630 --> 00:56:41.830
+was gehört sonst noch rein? ja? i++
+gehörte da rein. so, dann ist die frage was
+
+00:56:41.830 --> 00:56:46.210
+haben wir jetzt für eine bedingung,
+ja, wir gehen hier einmal rein machen das
+
+00:56:46.210 --> 00:56:49.900
+und dann wird gefragt ja ob wir das
+nochmal machen müssen. Was kommt da
+
+00:56:49.900 --> 00:56:56.910
+jetzt für eine bedingungen hin? ja,
+auch wieder i kleiner gleich n. so, was
+
+00:56:56.910 --> 00:57:07.410
+müssen wir vorweg eventuell noch
+initialisieren? ja? ja, also f ist gleich
+
+00:57:07.410 --> 00:57:22.020
+1 und i ist gleich? Ich würde sagen 1. Weil wir
+praktisch beim ersten mal wenn wir
+
+00:57:22.020 --> 00:57:27.599
+reingehen nehmen wir f mit 1 mal, ja? wenn
+wir also f mit 0 malnehmen würden wäre
+
+00:57:27.599 --> 00:57:32.910
+schlecht. wir nehmen f mit 1 mal dann wird i
+um 1 erhöht und dann klären wir, ob wir
+
+00:57:32.910 --> 00:57:38.420
+dann noch mal rein müssen. Ja? So jetzt ist
+hier eigentlich...
+
+00:57:38.420 --> 00:57:43.220
+also da wir jetzt schwein gehabt, dass
+dies funktioniert, weil diese
+
+00:57:43.220 --> 00:57:51.030
+konstruktion erzwingt ja, dass der Rumpf hier
+einmal durchlaufen wird. ja? selbst wenn jetzt
+
+00:57:51.030 --> 00:57:54.050
+n gleich 0 ist
+
+00:57:54.680 --> 00:58:00.720
+durchlaufende einmal diese schleife.
+Vorhin war das ja so, wenn n gleich 0 ist
+
+00:58:00.720 --> 00:58:03.359
+dann wurde er die While-Schleife gar nicht
+durchlaufen.
+
+00:58:03.359 --> 00:58:06.990
+aber hier wird sie einmal durchlaufen. ist
+das schlimm?
+
+00:58:06.990 --> 00:58:11.490
+nein. in diesem speziellen fall ist nicht
+schlimm, weil wenn wir hier einmal
+
+00:58:11.490 --> 00:58:15.900
+durchlaufen und f ist 1 und i ist 1 dann
+passiert hier nichts schlimmes, dann wird
+
+00:58:15.900 --> 00:58:21.630
+f mit 1 malgenommen und anschließend
+merken wir, es ist nicht mehr ein... ist ein
+
+00:58:21.630 --> 00:58:25.140
+erneuter durch noch nicht möglich
+nötig also kommen wir hin und geben
+
+00:58:25.140 --> 00:58:30.230
+jetzt das f aus und alles ist prima.
+
+00:58:36.580 --> 00:58:45.530
+okay also For-Schleife, While-Schleife, Do-While-Schleife, ja, je nach Situation müssen sie
+
+00:58:45.530 --> 00:58:49.010
+eine von diesen drei schleifen wählen
+und die For-Schleifen den man
+
+00:58:49.010 --> 00:58:55.340
+typischerweise dann, wenn von anfang an
+schon klar ist, wo ihre Lauf-Variabel los
+
+00:58:55.340 --> 00:59:01.070
+geht und wo sie aufhört. Ne While-Schleife nehmen
+sie typischerweise dann, wenn noch
+
+00:59:01.070 --> 00:59:07.700
+völlig unklar ist
+durch welche... also... der rumpf einer
+
+00:59:07.700 --> 00:59:11.390
+While-Schleife der muss nicht ganz
+systematisch immer mit so einer Lauf-
+
+00:59:11.390 --> 00:59:19.160
+Variablen bestückt sein. So, dann nehmen
+wir jetzt nochmal noch mal ne While-Schleife bei
+
+00:59:19.160 --> 00:59:24.760
+einem leicht komplizierteren beispiel
+nämlich der größte gemeinsame teiler
+
+00:59:24.760 --> 00:59:32.390
+von zwei zahlen. Müssten sie auch schon
+mal gehabt haben, ja. Also nehmen wir mal an, wir hätten
+
+00:59:32.390 --> 00:59:39.800
+die zahl 60 und die zahl 18 und wollen
+den größten gemeinsamen Teiler diese
+
+00:59:39.800 --> 00:59:47.900
+beiden zahlen ausrechnen. Wie der name
+schon sagt der größte gemeinsame Teiler
+
+00:59:47.900 --> 00:59:55.430
+ist die Zahl, ja, durch die wir sowohl die eine
+als auch die andere ohne rest teilen
+
+00:59:55.430 --> 01:00:02.510
+können. Wenn wir jetzt uns an den
+größten gemeinsamen Teiler herantasten
+
+01:00:02.510 --> 01:00:06.590
+dann würden wir vielleicht zunächst
+mal überlegen welche teiler sind denn in
+
+01:00:06.590 --> 01:00:11.900
+der 60 trennen und welche teiler sind
+denn in der 18 drin? welche teiler also
+
+01:00:11.900 --> 01:00:19.010
+welche zahlen ungleich 1 sind denn in der
+60 versteckt? können wir die mal von
+
+01:00:19.010 --> 01:00:26.150
+unten nach oben auflisten. welches ist
+die kleinste zahl die da drin steckt? die
+
+01:00:26.150 --> 01:00:37.030
+2 was steckt da sonst drin, ja? Ne 3. was ist sonst
+noch drin
+
+01:00:37.720 --> 01:00:47.410
+5, ja,  und sonst noch einer? Eventuell einer von
+denen mehrfach? ja, aber sechs ist ja
+
+01:00:47.410 --> 01:00:51.820
+zwei mal 3.
+also wir wollen jetzt hier alle
+
+01:00:51.820 --> 01:00:55.840
+primfaktoren auflisten die dieses
+produkt ausmachen.
+
+01:00:55.840 --> 01:01:04.480
+also wir haben jetzt zwei mal drei mal 5 ist 30.
+das fehlt uns jetzt noch? einer dieser
+
+01:01:04.480 --> 01:01:12.250
+faktoren kommen mehrmals vor. die 2, ne. also
+wenn wir alle faktoren hier auf alle
+
+01:01:12.250 --> 01:01:17.020
+teiler aufführen dann ist da die 2 die ist
+der zweimal drin weil wir haben die 60
+
+01:01:17.020 --> 01:01:20.920
+die kann man durch zwei teilen und die 30 die
+daraus resultiert ja noch mal. das heißt
+
+01:01:20.920 --> 01:01:27.790
+also die zeit die hier drin stecken sind 2 mal 2 mal 3 mal 5.  so was sind die teiler
+
+01:01:27.790 --> 01:01:30.330
+der 18?
+
+01:01:34.250 --> 01:01:42.560
+ja? 2 mal 3 mal 3. wenn man das jetzt so hinschreiben würden, dann sehen wir quasi
+
+01:01:42.560 --> 01:01:48.290
+die lächeln uns an. welches ist jetzt
+der größte gemeinsame Teiler der sowohl
+
+01:01:48.290 --> 01:01:56.240
+in der 60 ist als auch in der 18 ist? ja?
+nein da können wir noch größer. die
+
+01:01:56.240 --> 01:02:03.530
+sechs ja also diese 2 mal 3 und diese
+zwei mal drei sind beide in der 60 und
+
+01:02:03.530 --> 01:02:10.370
+in der 18 drin also sozusagen die
+größte menge von faktoren, die hier
+
+01:02:10.370 --> 01:02:17.210
+drin ist und da drin ist das ist der
+größte gemeinsame Teiler. so dieses
+
+01:02:17.210 --> 01:02:21.790
+jetzt mehr so eine mathematische
+betrachtung
+
+01:02:21.790 --> 01:02:26.720
+jetzt wollen wir irgendwie mit einer
+schleife versuchen den größten
+
+01:02:26.720 --> 01:02:31.720
+gemeinsamen Teiler... schauen sie jetzt
+nicht ins skript denken sie jetzt mit...
+
+01:02:31.720 --> 01:02:39.190
+sie lesen die beiden zahlen ein x und y und
+wollen jetzt mit einer hauruckmethode
+
+01:02:39.190 --> 01:02:48.350
+den größten gemeinsamen Teiler finden.
+wie würden sie das bewerkstelligen? muss
+
+01:02:48.350 --> 01:02:52.600
+jetzt nicht elegant sein sondern sie
+dürfen einfach mit ihnen einer schleife
+
+01:02:52.600 --> 01:02:57.520
+irgendwas ausprobieren bis sie denken: Jau,
+jetzt habe ich es gefunden.
+
+01:02:57.520 --> 01:03:03.730
+was würden sie machen? zwar jetzt ihren
+nachbarn...
+
+01:03:03.730 --> 01:03:08.240
+überlegen sie mal wie sie mit zwei
+zahlen, wie sie jetzt herausfinden
+
+01:03:08.240 --> 01:03:13.270
+welches der größte gemeinsame Teiler
+ist.
+
+01:03:33.150 --> 01:04:08.760
+so... also hören vorschlag. was machen sie?
+ja... ja... ja... ja... okay. Also der vorschlag war
+
+01:04:08.760 --> 01:04:14.789
+war wir nehmen die kleinere der beiden
+zahlen und fangen an mit der probeweise
+
+01:04:14.789 --> 01:04:17.520
+zuteil.
+also in diesem falle würden wir also
+
+01:04:17.520 --> 01:04:21.990
+feststellen 18 ist die kleinere und dann
+teilen wir die beiden jeweils durch 18
+
+01:04:21.990 --> 01:04:28.410
+durch 17 durch 16 durch 15 und so
+weiter und irgendwann ja das müsste doch möglich
+
+01:04:28.410 --> 01:04:30.630
+sein irgendwann wird die rechnung
+aufgehen
+
+01:04:30.630 --> 01:04:34.380
+und dann haben wir den größten
+gemeinsamen Teiler gefunden. fangen also
+
+01:04:34.380 --> 01:04:39.960
+oben an, ja, und machen es so lange bis es
+zum ersten mal klappt. wenn wir unten
+
+01:04:39.960 --> 01:04:44.160
+anfangen würden dann würden wir sofort
+weil er zwei schon irgendwie erfolg
+
+01:04:44.160 --> 01:04:51.210
+melden und dann habe aber nicht den
+größten gefunden. ja... ja... ich will jetzt
+
+01:04:51.210 --> 01:04:55.680
+erstmal den hauruck-algorithmus machen
+ja also wir fangen mit der kleineren an.
+
+01:04:55.680 --> 01:05:01.650
+noch mal kurze wiederholung von gestern:
+wir wollen in einem bedingten ausdruck -
+
+01:05:01.650 --> 01:05:08.660
+schauen sie nicht ins Skript - wir wollen in einem bedingten
+ausdruck die kleinere der beiden zahlen
+
+01:05:08.660 --> 01:05:15.029
+an Teiler überweisen. wie machen wir das?
+links steht Teiler und hier muss jetzt
+
+01:05:15.029 --> 01:05:18.990
+ein bedingter ausdruck stehen mit
+fragezeichen und doppelpunkt und der soll
+
+01:05:18.990 --> 01:05:24.849
+uns die kleinere von x und y liefern.
+das muss jeder hinkriegen.
+
+01:05:24.849 --> 01:05:32.109
+Mal andere... also ich habe hier irgendwie ein
+fragezeichen und einen doppelpunkt und
+
+01:05:32.109 --> 01:05:36.309
+muss jetzt irgendwie... anschließend muss
+Teiler die kleinere von den beiden zahlen
+
+01:05:36.309 --> 01:05:47.890
+x und y sein.
+wie mache ich das? ja. x kleiner y dann x... genau.
+
+01:05:47.890 --> 01:05:52.180
+also wenn x kleiner ist als y ist
+das ergebnis x und im anderen fall
+
+01:05:52.180 --> 01:05:59.410
+ist ergebnisse y. so das bedeutet
+also in der variable teiler steht jetzt
+
+01:05:59.410 --> 01:06:07.229
+die kleinere der beiden zahlen x und y.
+so, und jetzt wurde ne For-Schleife
+
+01:06:07.229 --> 01:06:09.910
+vorgeschlagen ich glaube eine
+While-Schleife wäre jetzt hier
+
+01:06:09.910 --> 01:06:16.289
+übersichtlicher. wir müssen jetzt eine
+While-Schleife machen, wo wir irgendwie
+
+01:06:16.289 --> 01:06:25.619
+probeweise dividieren und zwar solange
+bis endlich mal die division aufgeht.
+
+01:06:25.979 --> 01:06:32.619
+das ist also jetzt der die bedingung
+dass wir weitermachen müssen wir haben
+
+01:06:32.619 --> 01:06:37.960
+zwei Zahlen x und y wir haben so eine probeteiler und die lautet jetzt die bedingung
+
+01:06:37.960 --> 01:06:41.579
+dass wir weitermachen müssen? ja...
+
+01:06:54.769 --> 01:07:03.420
+machen wir weiter... haben das alle
+verstanden? While x modulo Teiler ist
+
+01:07:03.420 --> 01:07:13.910
+ungleich 0, oder y modulo Teiler ist
+ungleich 0
+
+01:07:13.910 --> 01:07:21.199
+das heißt also solange eine von den
+beiden zahlen immer noch nicht durch Teiler
+
+01:07:21.199 --> 01:07:28.289
+restlos geteilt werden kann, müssen wir
+weitermachen so und weitermachen. so und weitermachen ist
+
+01:07:28.289 --> 01:07:34.859
+jetzt was ganz besonders einfaches. was
+heißt weitermachen? mal andere. was
+
+01:07:34.859 --> 01:07:48.259
+heißt weitermachen? Teiler--. So, wenn wir
+also jetzt an dieser stelle hier kommen
+
+01:07:48.769 --> 01:07:55.880
+was ist was ist dann passiert? ja?
+
+01:07:57.890 --> 01:08:05.430
+ja...ja, das heißt also wir hierhin kommen dann
+war sowohl dieses hier 0 als auch dieses  hier 0.
+
+01:08:05.430 --> 01:08:10.320
+das heißt also teiler hat es geschafft
+eine division zu verursachen, die also
+
+01:08:10.320 --> 01:08:15.990
+keine rest geliefert hat und deswegen
+ist das ergebnis... würde jetzt hier in
+
+01:08:15.990 --> 01:08:41.240
+Teiler stehen ja also IO println also der
+ggt, der ggt, von x und y ist gleich Teiler.
+
+01:08:47.859 --> 01:08:58.069
+so, dieses verfahren... ja das kann sein... also...
+wofür das hinten? ne. nachdem x vom dem x
+
+01:08:58.069 --> 01:09:03.409
+ja, haben sie recht.
+also hier ist jetzt ne Hauruck-methode, weil
+
+01:09:03.409 --> 01:09:09.849
+wenn wir jetzt zum beispiel sagen wir mal den
+größten gemeinsamen teiler von 1000 und 998:
+
+01:09:09.849 --> 01:09:14.599
+verrechnen wollen was macht dann dieses
+blöde programm?
+
+01:09:14.599 --> 01:09:23.900
+wir teilen also durch 998 durch 997 996
+und so weiter und irgendwann merken wir
+
+01:09:23.900 --> 01:09:27.589
+endlich bei 2: Ah! jetzt hat es
+geklappt und dann haben wir den
+
+01:09:27.589 --> 01:09:34.009
+größten gemeinsamen teiler von 1000 und 998
+errechnet nämlich 2. ja? so dass ist jetzt
+
+01:09:34.009 --> 01:09:41.569
+nicht ganz so clever. deswegen... hat ein
+gewisser herr euklid, ein griechischer
+
+01:09:41.569 --> 01:09:45.130
+wissenschaftler, den euklidschen... ja?
+
+01:09:52.420 --> 01:10:10.690
+ja... nein, andersrum, ich teile... ich teile, ja?
+ 
+wenn sie mal... wenn sie 60 durch
+
+01:10:10.690 --> 01:10:15.910
+6 teilen ist der rest 0.
+also wir machen ja modulo, das ist der
+
+01:10:15.910 --> 01:10:21.310
+rest 60 durch 6 teilen ist das
+ergebnis rest 0.
+
+01:10:21.310 --> 01:10:25.420
+und wenn wir 18 durch 6 teilen ist
+das Ergebnis auch rest 0.
+
+01:10:25.420 --> 01:10:30.699
+die beiden zahlen ergeben den rest 0
+wenn sie durch 6 teilen... und ...deswegen
+
+01:10:30.699 --> 01:10:34.870
+war das das erste mal mit 6 passiert
+ist, ist das der größte gemeinsame
+
+01:10:34.870 --> 01:10:37.590
+teiler.
+
+01:10:43.020 --> 01:10:51.850
+okay... also heute abend schnell nachlesen! so,
+Euklid hat folgende beobachtung
+
+01:10:51.850 --> 01:11:00.610
+gemacht: Euklid hat gesagt - 20 Minuten müssen wir noch durchhalten -
+Euklid hat folgende Beobachtung gemacht wenn wir
+
+01:11:00.610 --> 01:11:09.100
+eine zahl x haben wo eine Teiler drin
+steckt, so dass dieser Teiler multipliziert dem rest
+
+01:11:09.100 --> 01:11:14.650
+mit dem anderen faktor x ergibt und
+wenn ihnen den y derselbe Teiler
+
+01:11:14.650 --> 01:11:23.640
+steckt natürlich mit anderen f2 dann
+steckt dieses t auch in der differenz.
+
+01:11:23.640 --> 01:11:30.430
+also x - y
+also ich sei eine größere zahl y die
+
+01:11:30.430 --> 01:11:35.050
+kleinere und soll jetzt ein gemeinsamer
+Teiler drin sein. Wenn ich jetzt die
+
+01:11:35.050 --> 01:11:40.960
+differenz dieser beiden zahl nehme dann
+kann ich ja durch diese beiden
+
+01:11:40.960 --> 01:11:45.690
+ausdrücke feststellen, da ist derselbe
+Teiler drin
+
+01:11:46.410 --> 01:11:54.970
+mit dem... mit der differenz der beiden
+faktoren hier. also,  wenn ich von x das y ab 4
+
+01:11:54.970 --> 01:12:04.780
+dann bleibt übrig team mal f1 minus f2. so das
+bedeutet ein Teiler der in dem f1
+
+01:12:04.780 --> 01:12:13.000
+steckt unter in dem f2 steckt, der steckt
+auch in der differenz. so das ist jetzt
+
+01:12:13.000 --> 01:12:17.680
+der klassische informatik ansatz: wenn
+ich ein problem habe was für mich zu
+
+01:12:17.680 --> 01:12:24.250
+groß ist dann versuche ich es nicht
+sofort zu lösen sondern ich verkleinere
+
+01:12:24.250 --> 01:12:26.910
+das problem und versuche es dann zu
+lösen.
+
+01:12:26.910 --> 01:12:31.870
+also wenn ich zwei zahlen habe die recht
+groß sind und ich soll nach dem
+
+01:12:31.870 --> 01:12:36.490
+gemeinsamen Teiler suchen, dann erlaubt
+mir jetzt diese beobachtung von euklid
+
+01:12:36.490 --> 01:12:44.860
+ich kann die suche verlagern auf die
+differenz der beiden zahlen und die
+
+01:12:44.860 --> 01:12:51.329
+kleinere zahl. also
+ich habe die 60 und die 18 und ich soll
+
+01:12:51.329 --> 01:12:54.599
+den ggt suchen
+ich denke oh gott, das ist es viel zu groß...
+
+01:12:54.599 --> 01:12:59.489
+das weiß ich nicht, aber ich weiß jetzt
+dass folgende: ich darf von der
+
+01:12:59.489 --> 01:13:04.559
+größeren zahl die kleinere abziehen,
+und die kleinere Zahl behalten und habe
+
+01:13:04.559 --> 01:13:09.989
+zwei neue zahlen wo ich weiß der
+größte gemeinsame Teiler steckt auch
+
+01:13:09.989 --> 01:13:12.659
+hier drin.
+ich habe ihn immer noch nicht gefunden aber
+
+01:13:12.659 --> 01:13:15.949
+das problem ist kleiner geworden.
+
+01:13:16.369 --> 01:13:20.249
+ich habe zwei zahlen und soll den
+größten gemeinsamen Teiler finden: was
+
+01:13:20.249 --> 01:13:27.919
+mache ich nehme zieht von der größeren
+zahl die kleinere ab. ja, jetzt 24 18
+
+01:13:27.919 --> 01:13:31.739
+ich kann diesen beiden Zahlen immer noch
+nicht ansehen was der größte
+
+01:13:31.739 --> 01:13:38.729
+gemeinsame Teiler ist. was mache ich ziehe
+von der größeren kleinere ab ich krieg
+
+01:13:38.729 --> 01:13:43.169
+wieder zwei Zahlen.
+die diesem Falle 6 und 18. so jetzt
+
+01:13:43.169 --> 01:13:48.419
+nämlich wieder die größere zahl und
+sie davon die kleinere ab ja dann kriegt
+
+01:13:48.419 --> 01:13:53.939
+zwei neue zahl nämlich sechs und zwölf
+den sich den größten gemeinsamen Teiler
+
+01:13:53.939 --> 01:13:56.969
+immer noch nicht unmittelbar an. Ich
+nehme wieder von der größeren zahl die
+
+01:13:56.969 --> 01:14:04.769
+kleinere weg und erhalte zwei neue zahl
+6 und 6 warum bin ich jetzt froh und
+
+01:14:04.769 --> 01:14:08.429
+glücklich? ich soll den größten
+gemeinsamen Teiler finden von zwei zahlen
+
+01:14:08.429 --> 01:14:18.269
+die eine heißt 6 die andere heißt 6. also weiß
+ich die antwort ist 6. Haben alle den
+
+01:14:18.269 --> 01:14:25.849
+algorithmus erkannte dahinter steckt? so
+lange die beiden zahlen verschieden sind
+
+01:14:25.849 --> 01:14:34.499
+ziehe von der größeren die kleinere ab
+das alles. also der algorithmus als
+
+01:14:34.499 --> 01:14:46.559
+While-Schleife lautet While x ungleich y.
+was mache ich im rumpf der schleife? was
+
+01:14:46.559 --> 01:14:50.550
+heißt das von der größeren sich die
+kleinere ab und die kleinere behalte
+
+01:14:50.550 --> 01:14:53.209
+ich? ja
+
+01:14:55.220 --> 01:15:02.410
+also if x größer als y: wer muss sich
+dann ändern?
+
+01:15:03.580 --> 01:15:12.110
+ja, also was was mache ich dann mit dem
+x? 6 ist gleich x - y. Fangfrage: was mache
+
+01:15:12.110 --> 01:15:22.130
+ich mit dem y? moment also wenn x
+größer ist als y muss ich jetzt noch
+
+01:15:22.130 --> 01:15:26.180
+zu setzen? also das x kriegt jetzt nen neuen wert,
+muss jetzt das y sich in diesem falle
+
+01:15:26.180 --> 01:15:31.520
+auch noch ändern?
+nein, so... aber was ist im anderen falle,
+
+01:15:31.520 --> 01:15:36.140
+wenn also dies nicht der fall? ist wenn
+also y größer ist als x. wer muss ich
+
+01:15:36.140 --> 01:15:38.620
+dann ändern?
+
+01:15:41.080 --> 01:15:47.170
+umrühren, fertig! das ist der euklidsche ggt!
+
+01:15:47.260 --> 01:15:53.780
+wo steht das ergebnis am ende? wenn wir
+aus dieser schleife jetzt schließlich
+
+01:15:53.780 --> 01:15:59.630
+raus kommen, wo ist das ergebnis? ja. in beiden
+entweder in x oder im y.
+
+01:15:59.630 --> 01:16:05.030
+ja, also ich fange an die 60 18 und ziehe
+aber immer von dem größeren die
+
+01:16:05.030 --> 01:16:08.780
+kleinere ab bis die beiden endlich
+gleich sind. und wenn sie gleich sind
+
+01:16:08.780 --> 01:16:15.050
+dann steht da das ergebnis drin.
+und warum ich das machen darf, liegt ganz
+
+01:16:15.050 --> 01:16:21.260
+einfach daran dass wenn ich in x und
+in y einen teiler habe, dann steckt dieser
+
+01:16:21.260 --> 01:16:26.350
+teile auch in der differenz der beiden
+Zahlen.
+
+01:16:26.740 --> 01:16:31.850
+so, jetzt könnte man ja denken jetzt war
+Euklid irgendwie hellauf begeistert, aber
+
+01:16:31.850 --> 01:16:38.270
+er sagte sich, das kriegen wir noch
+einen Zahn besser, denn überlegen sie
+
+01:16:38.270 --> 01:16:41.740
+jetzt, schauen sie nicht ins skript - schauen sie 
+jetzt hier an die tafel:
+
+01:16:41.740 --> 01:16:47.170
+schauen sie sich mal an diese 60 und
+diese 18
+
+01:16:47.170 --> 01:16:51.950
+da haben wir jetzt immer von der
+größeren zahl die kleinere abgezogen
+
+01:16:51.950 --> 01:16:58.460
+60, 42, 24, 6 und so weiter. da war erstmal
+schluss, weil dann mussten wir irgendwie
+
+01:16:58.460 --> 01:17:02.450
+umswitchen.
+wie sind wir von der 60 18
+
+01:17:02.450 --> 01:17:07.630
+zu der sechs gelangt? Wie ist die 6
+entstanden?
+
+01:17:11.500 --> 01:17:19.040
+wie sind wir von der 60 18
+letztendlich bei der 6 angekommen? durch
+
+01:17:19.040 --> 01:17:27.070
+welche operation?
+das haben wir immer wieder gemacht? ja?
+
+01:17:27.070 --> 01:17:32.810
+wir haben immer die 18 abgezogen. wir
+haben von der 60 die 18 abgezogen
+
+01:17:32.810 --> 01:17:39.170
+wieder die 18 abgezogen und so weiter. so...
+schließlich blieb 6 übrig. ich
+
+01:17:39.170 --> 01:17:42.260
+behaupte mal das ist eine operation die
+haben wir jetzt schon mehrmals in diesem
+
+01:17:42.260 --> 01:17:48.890
+letzten vorlesungen gehabt. wir ziehen
+immer wieder die 18 ab, bis es nicht mehr
+
+01:17:48.890 --> 01:17:58.060
+geht.
+was bleibt dann über? das ist der rest
+
+01:17:58.060 --> 01:18:04.840
+wenn wir 60 durch 18 teilen. das ist doch cool oder?
+
+01:18:04.990 --> 01:18:10.660
+wenn wir von 60 immer wieder 18 abziehen
+bis es nicht mehr geht,
+
+01:18:10.660 --> 01:18:17.000
+was dann übrig bleibt ist der rest, der
+bei der division durch 18 entstehen
+
+01:18:17.000 --> 01:18:22.700
+würde. ja, das heißt, wenn hier
+wenn das die variable x ist und wenn
+
+01:18:22.700 --> 01:18:27.950
+das die variable y ist und wir machen
+hier also diesen übergang, dann ist
+
+01:18:27.950 --> 01:18:33.550
+diese hier x modulo y.
+
+01:18:36.610 --> 01:18:44.830
+so, das heißt wenn wir zwei zahlen haben 60
+und 18
+
+01:18:44.830 --> 01:18:51.140
+wie lautet jetzt dass erst das nächste
+pärchen, was wir bekommen? und zwar dass
+
+01:18:51.140 --> 01:18:56.860
+kriegen wir jetzt in einem rutsch.
+welches ist die neue zahl vorne und
+
+01:18:56.860 --> 01:19:02.289
+welches ist die neue zahl hinten.
+wer ist anschließend die größere und
+
+01:19:02.289 --> 01:19:06.090
+wer ist anschließend der kleinere? ja?
+
+01:19:06.749 --> 01:19:12.429
+also hier kommt, die 18 die kommt einfach
+nach vorne und hier hinten käme die 6
+
+01:19:12.429 --> 01:19:16.539
+hin.
+ja? oder anders ausgedrückt wenn hier also
+
+01:19:16.539 --> 01:19:22.090
+die x steht und hier das y steht dann
+steht anschließend vorne das y und
+
+01:19:22.090 --> 01:19:34.510
+hinten steht x modulo y. also ein zahlenpaar x y muss jetzt überführt werden in
+
+01:19:34.510 --> 01:19:40.079
+das paar y x modulo y.
+
+01:19:41.579 --> 01:19:47.969
+wenn wir also jetzt eine schleife haben,
+die bedingung lass ich erst noch mal offen,
+
+01:19:47.969 --> 01:19:53.889
+dann müssen wir im Rumpf dieser schleife aus
+der variable x und y, müssen wir machen:
+
+01:19:53.889 --> 01:20:00.579
+y x modulo y. Das ist jetzt der klassiker
+wenn sie im glas cola und fanta haben
+
+01:20:00.579 --> 01:20:06.670
+und wollen ihn also tauschen, ja, brauchen
+sie ein drittes glas sonst gibts ne
+
+01:20:06.670 --> 01:20:12.039
+schweinerei.
+ja, wir müssen nämlich jetzt ja x und y
+
+01:20:12.039 --> 01:20:25.499
+irgendwie da müssen die die plätze
+tauschen, deswegen nehme ich jetzt mal ein z und schreibe also da diesem
+modulowert rein. und was ist das neue x?
+
+01:20:25.499 --> 01:20:41.070
+von wem bekommt das x seinen Wert? das y...
+und das y bekommt welchen wert? das z.
+
+01:20:41.330 --> 01:20:46.760
+also dieses jetzt erstmal die schleife
+und sie werden mir recht geben, wenn sie
+
+01:20:46.760 --> 01:20:50.240
+sich die anschauen, da werden sie nie und
+nimmer auf die idee gekommen das hier der
+
+01:20:50.240 --> 01:20:55.370
+GGT berechnet wird.
+aber genau das macht es. im Rumpf der
+
+01:20:55.370 --> 01:21:02.000
+schleife wird immer wieder der modulowert berechnet und es wird sozusagen die
+
+01:21:02.000 --> 01:21:07.910
+kleinere zahl nach vorne geschrieben
+hier und die die neue kleinere zahl ist
+
+01:21:07.910 --> 01:21:11.900
+der alte modulowert. das heißt also wenn
+wir das nochmal hier jetzt so uns
+
+01:21:11.900 --> 01:21:15.610
+anschauen
+wir beginnen mit 80... mit 60 18
+
+01:21:15.610 --> 01:21:24.250
+im ersten schritt kommt die 18 nach
+hierhin und hier hinten kommt jetzt der..
+
+01:21:24.250 --> 01:21:29.630
+rest der bei der division von 60 durch
+18 auftritt. so, was macht der nächste
+
+01:21:29.630 --> 01:21:36.890
+schritt? die sechs kommt nach vorne
+und was kommt hier hin? der rest der bei
+
+01:21:36.890 --> 01:21:47.600
+der division von 18 durch 6 auftaucht und der
+ist? 0. So, bingo! vorne steht das ergebnis
+
+01:21:47.600 --> 01:21:50.770
+wenn hinten 0 ist.
+
+01:21:54.550 --> 01:21:58.870
+wie lautet also die bedingungen hier?
+
+01:22:00.220 --> 01:22:08.980
+ja... also wenn y... solange y verschieden
+ist von 0, wird immer wieder der
+
+01:22:08.980 --> 01:22:14.410
+modulowert berechnet und wir machen
+sozusagen den übergang von x y zu y
+
+01:22:14.410 --> 01:22:20.710
+x modulo y. so ich hab das jetzt alles
+erklärt unter der annahme vorne ist die
+
+01:22:20.710 --> 01:22:25.210
+größere zahl und hinten ist die
+kleinere Zahl. jetzt nehmen wir an
+
+01:22:25.210 --> 01:22:30.390
+jemand hätte uns vorne die kleinere
+zahl gegeben und hinten die größere.
+
+01:22:30.390 --> 01:22:36.070
+Wollen wir mal eben gucken, ob das auch funktioniert.
+wie lautet der erste schritt, wenn wir
+
+01:22:36.070 --> 01:22:43.540
+mit 18 60 beginnen? wenn wir einmal durch
+diese Schleife sind, wie sehen... wie
+
+01:22:43.540 --> 01:22:50.880
+sieht das neue pärchen aus? wer kommt
+nach vorne also die 60 kommt nach vorne
+
+01:22:50.880 --> 01:23:01.270
+was kommt hinten hin?
+warum? Ist richtig. ja also, wenn sie 18 ganzzahlig
+
+01:23:01.270 --> 01:23:05.820
+durch 60 zeilen ist das 0 rest
+18
+
+01:23:05.820 --> 01:23:11.890
+das heißt also im ersten schritt für
+den fall das vorne die kleinere zahl
+
+01:23:11.890 --> 01:23:15.490
+steht, werden die beiden zahlen einfach
+getauscht.
+
+01:23:15.490 --> 01:23:21.100
+das macht einfach diese operation hier.
+und anschließend rennen wir von oben
+
+01:23:21.100 --> 01:23:27.310
+nach unten runter, wie gerade gesehen. ja
+also dieser algorithmus, ich hab den jetzt deswegen
+
+01:23:27.310 --> 01:23:31.750
+gebracht weil sie sehen also wir haben
+hier drei befehle in dieser While-
+
+01:23:31.750 --> 01:23:39.040
+Schleife, ja, und da drin steht jetzt die
+ganze weisheit des turbo-Euklid, der also
+
+01:23:39.040 --> 01:23:46.060
+gesagt hat, immer wieder abziehen, das ist
+mir zu langatmig, zu langwierig, ich mache
+
+01:23:46.060 --> 01:23:51.610
+da die abkürzung mit dem ganzzahligen
+rest, ja, und hier wird immer der ganzzahlige
+
+01:23:51.610 --> 01:23:55.530
+rest gebildet und das ergebnis steht
+jetzt wo? also wenn ich jetzt am ende
+
+01:23:55.530 --> 01:24:00.730
+sagen will and the winner is  und so weiter, wo steht
+
+01:24:00.730 --> 01:24:08.940
+jetzt das ergebnis? in nem x. gut,
+dann höre ich hier auf. nehmen sich ein
+
+01:24:08.940 --> 01:24:14.630
+aufgabenblatt mit,  kommen sie nächste
+woche wieder und seien sie fleißig!
+
