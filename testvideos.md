@@ -16,6 +16,7 @@ Dies ist eine Sitzung der Veranstaltung "Informatik A: Algorithmen und Datenstru
 * Vortragender: Prof. Dr. Oliver Vornberger
 * Mikrofon: Sennheiser Funkmikron, an Halsband mit aufgestecker Mikrofonkapsel
 * Anmerkungen: Tafelvorlesung 
+* Lizenz: (c) 2017, Universität Osnabrück, Nutzungserlaubnis für diese Untertitelstudie erteilt
 * Bereitgestellt von: Rüdiger Rolf (rrolf@uni-osnabrueck.de)
 
 ### Pädagogik
@@ -26,12 +27,21 @@ Dies ist eine Sitzung der Veranstaltung "Grundfragen der Didaktik" der Universit
 * Vortragende: Prof. Dr. Ingrid Kunze
 * Mikrofon: Sennheiser Funkmikrofon, an Halsband mit aufgestecker Mikrofonkapsel
 * Anmerkungen: Powerpoint-Vortrag
+* Lizenz: (c) 2017, Universität Osnabrück, Nutzungserlaubnis für diese Untertitelstudie erteilt
 * Bereitgestellt von: Rüdiger Rolf (rrolf@uni-osnabrueck.de)
 
 
 
 ## Lernvideos
 Bitte Lernvideos aus Verschiedenen Kontexten hier angeben.
+
+### Mathematik für Ingenieurwissenschaften
+* ID: mathe-fuer-ing
+* URL: https://video-weiterbildung.virtuos.uos.de/static/mh_default_org/engage-player/06af2220-b73a-4480-8383-583a9ce3a769/708eb15a-7875-4519-97fc-2b5a7abf95e7/05_hart_am_limit.mp4
+* Vortragender: Dr. Thomas Potempa
+* Mikrofon: Wahrscheinlich in Kamera integriert.
+* Lizenz: CC-BY-SA Offene Hochschule Niedersachsen, 2017. http://www.offene-hochschule-niedersachsen.de
+* Bereitgestellt von: Rüdiger Rolf (rrolf@uni-osnabrueck.de)
 
 ## Imagevideos
 Bitte Imagevideos von Universitäten hier angeben.

@@ -1,0 +1,736 @@
+WEBVTT
+Kind: captions
+Language: de
+
+00:00:00.940 --> 00:00:05.140
+Unsere fünfte Einheit führt uns in die Betrachtung von Grenzwerten.
+
+00:00:05.140 --> 00:00:06.960
+Grenzwerte,
+
+00:00:07.280 --> 00:00:10.580
+insbesondere das Streben gegen die Unendlichkeit,
+
+00:00:10.580 --> 00:00:12.860
+haben die Mathematiker
+
+00:00:13.280 --> 00:00:16.220
+schon seit Anbeginn
+
+00:00:16.220 --> 00:00:17.220
+im Auge.
+
+00:00:17.220 --> 00:00:19.720
+Das heißt: Wie verhalten sich Funktionen,
+
+00:00:20.180 --> 00:00:23.660
+wenn meine Funktion ins Unendliche strebt?
+
+00:00:24.380 --> 00:00:27.960
+Beginnen möchte ich aber mit der Definition des Grenzwertes
+
+00:00:27.960 --> 00:00:30.160
+bzw. mit der mathematischen Schreibweise.
+
+00:00:30.160 --> 00:00:35.740
+Das heißt der Mathematiker verwendet für die Bildung von Grenzwerten den sogenannten Limes-Ausdruck.
+
+00:00:35.740 --> 00:00:39.820
+Hier steht der Limes als Abkürzung für: "Bilde einen Grenzwert."
+
+00:00:39.820 --> 00:00:42.520
+Im weiteren Teil hier unten finde ich
+
+00:00:42.520 --> 00:00:43.840
+was passieren soll,
+
+00:00:43.840 --> 00:00:47.140
+das heißt hier in meinem Beispiel strebt x gegen unendlich,
+
+00:00:47.140 --> 00:00:54.640
+und hier steht jetzt meine Funktion, mein Ausdruck, den ich dieser Grenzwertbetrachtung unterziehen will,
+
+00:00:54.640 --> 00:00:58.200
+hier erst einmal ganz allgemein meine Funktion f von x.
+
+00:00:58.200 --> 00:01:05.040
+Gesprochen heißt es: "Limes x gegen unendlich von der Funktion f von x."
+
+00:01:05.940 --> 00:01:08.400
+Grenzwertbetrachtungen sind von Bedeutung,
+
+00:01:08.640 --> 00:01:11.200
+bei der Bestimmung von Stetigkeiten der Funktion,
+
+00:01:11.740 --> 00:01:15.880
+aber auch im Bereich der Betrachtung von Differenzierbarkeiten
+
+00:01:15.920 --> 00:01:22.720
+und, ganz wichtig im Rahmen des Studiums später, bei der Konvergenz von Folgen und Reihen.
+
+00:01:22.960 --> 00:01:26.360
+Aber zunächst wollen wir
+
+00:01:26.360 --> 00:01:30.800
+einen Blick in die Grenzwertberechnung werfen.
+
+00:01:30.980 --> 00:01:35.500
+Als Erstes möchten wir und eine Parallele zur x-Achse vorstellen
+
+00:01:35.580 --> 00:01:38.800
+gucken: Wie verhält sich diese Gerade, diese Parallele,
+
+00:01:38.920 --> 00:01:41.020
+wenn x gegen unendliche strebt?
+
+00:01:41.280 --> 00:01:43.280
+Von dem Bild was wir auf den Augen haben
+
+00:01:43.280 --> 00:01:46.100
+sehen wir: Es ist ne Parallele zur x-Achse, sie ist nicht von x abhängig,
+
+00:01:46.100 --> 00:01:50.060
+das heißt, egal welchen Wert x annimmt, also auch unendlich,
+
+00:01:50.060 --> 00:01:53.720
+der Funktionswert a wird sich nicht verändern.
+
+00:01:53.820 --> 00:01:57.200
+Das heißt der Grenzwert von der Parallelen zur x-Achse
+
+00:01:57.200 --> 00:02:00.880
+limes x gegen unendlich von a
+
+00:02:00.880 --> 00:02:02.480
+ist natürlich a.
+
+00:02:05.100 --> 00:02:08.620
+Wir können aber auch eine Gerade betrachten, das wollen wir in unserem zweiten Ausdruck tun.
+
+00:02:08.620 --> 00:02:11.820
+Und wiederum aus dem Bild, was wir von einer Geraden haben,
+
+00:02:11.820 --> 00:02:15.700
+weiß ich natürlich: Die Gerade wächst und wächst und wächst je größer
+
+00:02:15.700 --> 00:02:17.300
+mein x wird.
+
+00:02:17.300 --> 00:02:20.100
+Das heißt, strebt x gegen unendlich,
+
+00:02:20.100 --> 00:02:23.240
+dann wird auch der Funktionswert gegen unendlich streben.
+
+00:02:23.440 --> 00:02:26.540
+Und ein ähnliches Bild haben wir natürlich von der Parabel.
+
+00:02:26.560 --> 00:02:28.560
+Auch die, je größer x wird,
+
+00:02:28.560 --> 00:02:31.300
+desto größer wird auch der y-Wert
+
+00:02:31.480 --> 00:02:35.860
+und, gedanklich gesprochen, hier steht ja x mal x,
+
+00:02:36.300 --> 00:02:42.080
+wenn x schon gegen unendliche strebt, unendlich mal unendlich muss natürlich dann auch unendlich sein.
+
+00:02:42.540 --> 00:02:44.980
+Aber es gibt auch andere Funktionen,
+
+00:02:45.500 --> 00:02:47.500
+die ein gänzlich anderes Verhalten zeigen,
+
+00:02:47.720 --> 00:02:50.000
+so z.B. meine Hyperbel.
+
+00:02:50.000 --> 00:02:53.800
+Typischer Vertreter, oder einfachster Vertreter, der Hyperbel
+
+00:02:53.800 --> 00:02:57.600
+ist die Funktion "y ist gleich eins durch x".
+
+00:02:57.600 --> 00:03:00.740
+Das heißt, hier betrachten wir den Kehrwert von x
+
+00:03:00.740 --> 00:03:04.940
+und, Sie merken schon: Je größer die Zahl ist, die ich hier unten einsetze,
+
+00:03:04.940 --> 00:03:06.800
+desto größer wird der Nenner
+
+00:03:06.800 --> 00:03:10.780
+und damit wird natürlich der Ausdruck, den ich erhalte als y-Wert, immer kleiner.
+
+00:03:11.100 --> 00:03:15.660
+Das heißt, hier strebt, beim Übergang von x gegen unendlich
+
+00:03:15.960 --> 00:03:19.000
+mein Funktionswert langsam gegen null.
+
+00:03:19.500 --> 00:03:24.980
+Und ist meine Zahl positiv, werde ich auch einen positives Ergebnis erhalten.
+
+00:03:25.800 --> 00:03:31.860
+Umgekehrt: Lassen wir das ganze gegen minus unendlich streben, dann ist mein x natürlich negativ
+
+00:03:32.200 --> 00:03:35.740
+und hier finde ich eine Annäherung von unten an die x-Achse.
+
+00:03:36.060 --> 00:03:38.780
+Setze ich das um in die mathematische Notation,
+
+00:03:38.880 --> 00:03:41.960
+dann hätte ich also hier im ersten Fall den Limes
+
+00:03:42.020 --> 00:03:46.380
+eins durch x für x gegen unendlich
+
+00:03:46.380 --> 00:03:48.200
+und das ist natürlich null.
+
+00:03:48.380 --> 00:03:50.780
+Betrachte ich die andere Seite,
+
+00:03:50.840 --> 00:03:55.880
+dann finde ich den Limes x gegen minus unendlich von eins durch x
+
+00:03:55.880 --> 00:03:57.840
+und das ist natürlich auch null.
+
+00:03:57.840 --> 00:04:00.900
+Und das negative Vorzeichen zeigt mir jetzt nur an,
+
+00:04:00.900 --> 00:04:06.600
+dass ich mich von unten an die x-Achse entsprechend annähere.
+
+00:04:07.880 --> 00:04:10.200
+Dieses ist ein wichtiges Konzept,
+
+00:04:10.280 --> 00:04:12.280
+das wir weiterverfolgen können.
+
+00:04:12.280 --> 00:04:14.260
+Jetzt wollen wir versuchen
+
+00:04:14.380 --> 00:04:17.640
+mal ein Polynom vierten Grades zu betrachten
+
+00:04:17.640 --> 00:04:25.980
+und gucken, wie sich das verhält, wenn ich mich an unendlich und an minus unendlich annähere.
+
+00:04:26.780 --> 00:04:31.200
+Vom Gefühl her würde man natürlich sagen, es muss unendlich rauskommen
+
+00:04:31.520 --> 00:04:36.940
+und jetzt kommt das "aber": Wie kann ich das mathematisch tatsächlich auch belegen?
+
+00:04:37.860 --> 00:04:40.400
+Was ich jetzt hier tun möchte, ist,
+
+00:04:40.580 --> 00:04:44.800
+in diesem Ausdruck hier oben, die höchste Potenz von x auszuklammern.
+
+00:04:44.860 --> 00:04:48.440
+Das heißt, aus 3 x hoch 4 wird
+
+00:04:48.720 --> 00:04:52.780
+x hoch vier mal klammer auf 3
+
+00:04:52.780 --> 00:04:53.840
+minus
+
+00:04:55.900 --> 00:05:00.960
+zwei x hoch drei, wenn ich da x hoch vier ausklammere, bleibt zwei durch x über.
+
+00:05:01.280 --> 00:05:04.180
+Und wenn ich aus vier x hoch vier ausklammere,
+
+00:05:04.220 --> 00:05:06.220
+dann bleibt vier durch x hoch vier über,
+
+00:05:06.220 --> 00:05:11.240
+denn in der Multiplikation x hoch 4 mal eins durch x hoch 4 gibt natürlich eins
+
+00:05:11.440 --> 00:05:14.860
+und damit ist die Umformung auch tatsächlich rechtlich.
+
+00:05:15.220 --> 00:05:17.340
+Hier finde ich jetzt meine Hyperbel hinter.
+
+00:05:17.740 --> 00:05:23.000
+Eins durch x, von der ich weiß, wie sie sich verhält, wenn x gegen unendlich strebt.
+
+00:05:23.760 --> 00:05:26.720
+Drei ist ein konstanter Wert.
+
+00:05:27.860 --> 00:05:31.040
+Zwei durch x strebt mein Übergang nach unendlich
+
+00:05:31.040 --> 00:05:32.440
+natürlich gegen null
+
+00:05:32.640 --> 00:05:36.440
+und entsprechend wird auch vier durch x hoch 4,
+
+00:05:36.440 --> 00:05:41.240
+weil es ebenfalls eine Hyperbel-Funktion ist, gegen null streben.
+
+00:05:44.360 --> 00:05:46.660
+Und das habe ich auf der anderen Seite auch gemacht.
+
+00:05:47.180 --> 00:05:50.860
+Hier habe ich noch keine vorzeichentechnische Funktion drin.
+
+00:05:51.180 --> 00:05:54.320
+Und wenn ich das jetzt vereinfache, dann weiß ich,
+
+00:05:54.640 --> 00:05:59.980
+dieser Ausdruck strebt ja gegen null, der gegen null und der gegen drei.
+
+00:06:00.720 --> 00:06:03.840
+Das heißt der Grenzwert hier wird drei sein.
+
+00:06:03.880 --> 00:06:07.180
+Das heißt, ich erhalte drei x hoch 4 in der Klammer.
+
+00:06:07.180 --> 00:06:11.200
+Und wenn ich jetzt x gegen unendlich streben lasse, erhalte ich natürlich unendlich.
+
+00:06:11.600 --> 00:06:13.900
+Das tue ich auch auf dieser Seite.
+
+00:06:14.940 --> 00:06:18.580
+Und, bei der Annäherung an minus unendlich
+
+00:06:18.640 --> 00:06:22.160
+ist natürlich klar, negative Zeichen miteinander multipliziert,
+
+00:06:22.540 --> 00:06:25.920
+werden positiv, wenn es zwei oder vier oder sechs sind
+
+00:06:25.920 --> 00:06:30.080
+und hier habe ich die vierte Potenz, das heißt, ich multipliziere vier negative Zahlen miteinander,
+
+00:06:30.340 --> 00:06:32.920
+das heißt, ich habe vier mal
+
+00:06:33.000 --> 00:06:37.240
+die minus eins stehen. Minus eins mal minus eins mal minus eins mal minus eins
+
+00:06:37.240 --> 00:06:42.320
+und das ergibt natürlich eins, das heißt auch hier: Die Funktion strebt gegen plus unendlich.
+
+00:06:42.760 --> 00:06:46.880
+Dass das nicht immer so ist, sehen wir auf der nächsten Folie.
+
+00:06:47.420 --> 00:06:52.100
+Dort habe ich mein Polynom verändert, wir haben jetzt ein Polynom fünften Grades in dem System
+
+00:06:52.100 --> 00:06:56.180
+und wir folgen dem gleichen Ansatz, das heißt wir klammern die fünfte Potenz aus
+
+00:06:56.180 --> 00:07:00.280
+in dem Ausdruck. Das heißt die höchste Potenz von x.
+
+00:07:00.280 --> 00:07:07.620
+Dann sehen wir wieder hier unsere Hyperbelfunktionen, die natürlich gegen null streben.
+
+00:07:07.980 --> 00:07:12.920
+Und wir erhalten wiederum einen Grenzwert von plus unendlich,
+
+00:07:12.920 --> 00:07:17.540
+wenn wir uns an plus unendlich auf der x-Seite annähern.
+
+00:07:18.460 --> 00:07:21.260
+Machen wir das auf der negativen Seite, das heißt die Annäherung
+
+00:07:21.460 --> 00:07:23.460
+bei minus unendlich,
+
+00:07:23.640 --> 00:07:26.820
+dann ist die rechnerische Betrachtung natürlich identisch,
+
+00:07:27.060 --> 00:07:30.760
+aber hier unten finde ich x hoch fünf
+
+00:07:30.760 --> 00:07:36.840
+und wiederum eine negative Zahl zur fünften Potenz wird natürlich ein negatives Ergebnis liefern.
+
+00:07:36.840 --> 00:07:45.440
+Das heißt diese Funktion nähert sich auf der linken Zeichenseite dem Zahlenwert minus unendlich an.
+
+00:07:47.800 --> 00:07:49.420
+Wenn wir jetzt einen Schritt weiter gehen,
+
+00:07:49.420 --> 00:07:53.660
+bisher haben wir die Unendlichkeit betrachtet, minus unendlich/plus unendlich.
+
+00:07:53.680 --> 00:07:59.460
+Wir wollen jetzt hier langsam die Differenzialrechnung vorbereiten, das heißt wir wollen die Betrachtung
+
+00:08:00.300 --> 00:08:03.680
+durchführen, nämlich die der Steigung einer Geraden.
+
+00:08:03.680 --> 00:08:05.100
+Das ist noch relativ einfach.
+
+00:08:05.100 --> 00:08:09.100
+Das kennt man: Die Steigung einer Geradene ergibt sich aus dem Quotient von
+
+00:08:09.220 --> 00:08:13.340
+y-Werten, Differenzen der y-Werte und Differenzen der x-Werte,
+
+00:08:13.340 --> 00:08:16.660
+Und wenn ich das für diese Gerade, die wir jetzt hier gezeichnet haben, mal durchführe.
+
+00:08:16.820 --> 00:08:19.200
+dann habe ich ein delta y von
+
+00:08:19.200 --> 00:08:27.440
+drei (nämlich drei minus null), und ich habe ein delta x von vier (vier minus null ist vier)
+
+00:08:27.440 --> 00:08:32.280
+Das heißt die Steigung meiner Geraden, die ich hier habe, ist drei Viertel.
+
+00:08:33.000 --> 00:08:36.980
+Wenn ich zu einem Polynom zweiten Grades übergehe, zu einer Parabel,
+
+00:08:37.480 --> 00:08:41.080
+dann kann ich jetzt natürlich Schnittpunkte mit Geraden bestimmen.
+
+00:08:41.260 --> 00:08:43.260
+Und
+
+00:08:44.380 --> 00:08:50.060
+was mich natürlich interessiert, ist zum Beispiel die Steigung einer Sekante.
+
+00:08:50.200 --> 00:08:54.020
+Das heißt ich lege eine Gerade in meine Parabel hinein,
+
+00:08:54.260 --> 00:08:57.820
+die an zwei Punkten meine Parabel schneidet
+
+00:08:58.080 --> 00:09:02.720
+und ich versuchen natürlich dann die Steigung meiner Sekante entsprechend zu bestimmen.
+
+00:09:02.740 --> 00:09:06.200
+Die Gleichung ist das Gleich, was wir bei den Geraden angewendet haben,
+
+00:09:06.200 --> 00:09:09.220
+das heißt auch hier wird delta y durch delta x
+
+00:09:09.220 --> 00:09:16.060
+oder y2 minus y1 geteilt durch x2 minus x1.
+
+00:09:16.140 --> 00:09:18.580
+Das können wir an diesem Beispiel durchrechnen.
+
+00:09:19.040 --> 00:09:27.100
+Der y-Wert von meinem zweiten Punkt ist 5,5, der von meinem ersten Punkt hier unten ist 1,5.
+
+00:09:27.120 --> 00:09:29.960
+5,5 minus 1,5 ist natürlich vier
+
+00:09:30.300 --> 00:09:34.220
+und die Differenz der x-Werte, der erste x-Wert ist
+
+00:09:35.020 --> 00:09:37.020
+eins, der andere ist minus 3.
+
+00:09:37.020 --> 00:09:45.960
+Eins minus minus drei ist natürlich vier und als Steigungsquotient erhalte ich hier eine Steigung von eins.
+
+00:09:47.360 --> 00:09:53.200
+Was aber in der Betrachtung spannender wird,
+
+00:09:53.200 --> 00:09:58.300
+ist nämlich die Frage: Welche Steigung hat eine Gerade, die meine Parabel nur berührt?
+
+00:09:58.300 --> 00:10:04.080
+Das heißt ich könnte hier eine Gerade anlegen, sieht man jetzt fast im Bild,
+
+00:10:04.540 --> 00:10:08.160
+die meine Parabel nur berührt und nicht mehr schneidet.
+
+00:10:10.420 --> 00:10:12.420
+Ein Punkt.
+
+00:10:12.520 --> 00:10:17.300
+Geradenberechnung wird dann schwierig, denn um eine Gerade zu bestimmen, brauche ich zwei Punkte,
+
+00:10:17.520 --> 00:10:22.340
+aber wir können natürlich das Konzept der Sekantensteigung
+
+00:10:22.340 --> 00:10:24.240
+uns zunutze machen,
+
+00:10:24.240 --> 00:10:29.480
+indem wir einfach den zweiten Punkt, den hier, langsam nach unten wandern lassen
+
+00:10:29.480 --> 00:10:33.480
+und ihn auf x1 zuwandern lassen.
+
+00:10:34.180 --> 00:10:38.340
+Jetzt merken Sie schon: Wir sind auf dem Weg einen Grenzwert zu bestimmen,
+
+00:10:38.840 --> 00:10:46.180
+denn wenn x2 gleich x1 werden würde, stände hier 3 minus 3 und das wäre natürlich null
+
+00:10:46.180 --> 00:10:49.220
+und etwas geteilt durch null würde natürlich unendlich geben.
+
+00:10:49.480 --> 00:10:53.020
+Das heißt hier sind wir nicht in der Lage eine Aussage zu treffen.
+
+00:10:53.280 --> 00:10:57.360
+Aber mithilfe des Konzeptes des Grenzwertes wird uns dieses möglich sein.
+
+00:10:57.600 --> 00:11:01.660
+Hier nochmal verdeutlicht: Langsam wandert mein Punkt nach unten.
+
+00:11:01.660 --> 00:11:06.220
+Die Sekantensteigung verändert sich natürlich je dichter ich an meinen betrachteten Punkt heranwachse.
+
+00:11:06.220 --> 00:11:11.840
+Das heißt die Differenz anfangs von vier schrumpft langsam, hier habe ich eine Differenz im x-Wert von zwei.
+
+00:11:11.840 --> 00:11:19.780
+Und wenn ich xx gleich x1 werden lasse, dann habe ich natürlich meine Tangente, die dann entsteht
+
+00:11:20.020 --> 00:11:22.240
+und diese Steigung möchte ich natürlich haben.
+
+00:11:22.240 --> 00:11:29.040
+Wie schon gesagt: wenn das meine Parabel ist, die Steigung meiner Tangente würde sich aus delta y und delta x ergeben.
+
+00:11:29.040 --> 00:11:33.060
+Wenn aber x1 und x2 identisch sind, müsste ich hier durch null teilen.
+
+00:11:34.080 --> 00:11:36.080
+Aber wir kennen ja den Grenzwert.
+
+00:11:36.080 --> 00:11:41.600
+Das heißt was wir betrachten wollen, ist unsere Funktion, die Gleichung für unsere Steigung.
+
+00:11:41.600 --> 00:11:45.500
+Diesen Quotienten wollen wir langsam entwickeln,
+
+00:11:45.500 --> 00:11:49.460
+indem wir x2 auf x1 zubewegen lassen.
+
+00:11:49.820 --> 00:11:56.540
+Das heißt wir betrachten den Grenzwert von y2 minus y1
+
+00:11:56.580 --> 00:11:58.880
+geteilt durch x2 minus x1.
+
+00:11:58.880 --> 00:12:03.040
+Hier haben wir jetzt einen mathematischen Ausdruck stehen, x1 und x2 sind da noch enthalten.
+
+00:12:03.040 --> 00:12:05.800
+Den kann ich aber naturgemäß zusammenfassen.
+
+00:12:05.880 --> 00:12:09.660
+Das habe ich jetzt getan. Ich habe meine Klammern aufgelöst und die Vorzeichen hier hinten korrigiert
+
+00:12:09.820 --> 00:12:12.620
+und im nächsten Schritt,
+
+00:12:13.260 --> 00:12:15.260
+merken Sie schon,
+
+00:12:15.260 --> 00:12:16.920
+ich habe ein Stückchen zusammengefasst.
+
+00:12:16.920 --> 00:12:22.220
+Wenn das hier zusammengefasst ist, dann sehen wir hier x2 Quadrat minus x1 Quadrat
+
+00:12:22.220 --> 00:12:25.060
+und das erinnert natürlich an die dritte binomische Formel.
+
+00:12:25.060 --> 00:12:29.080
+Die habe ich hier auch gleich umgesetzt. Das heißt dieser Ausdruck ist identisch mit dem
+
+00:12:29.080 --> 00:12:32.980
+Ausdruck x2 plus x1 mal x2 minus x1.
+
+00:12:33.340 --> 00:12:37.040
+Und wenn wir uns jetzt hier den letzten Term auf der Tafel angucken,
+
+00:12:37.060 --> 00:12:41.480
+dann habe ich drei Terme stehen, die zu betrachten sind
+
+00:12:41.480 --> 00:12:47.660
+und im Zehner finde ich in beiden Termen, die dort stehen, immer den Faktor x2 minus x1.
+
+00:12:47.660 --> 00:12:50.360
+Das heißt das kann ich zusammenfassen.
+
+00:12:51.000 --> 00:12:53.040
+Und wenn ich das
+
+00:12:53.200 --> 00:12:55.300
+zusammengefasst habe,
+
+00:12:55.480 --> 00:12:58.740
+dann kann ich natürlich kürzen.
+
+00:13:02.340 --> 00:13:04.340
+Dann bleibt hier über:
+
+00:13:04.540 --> 00:13:07.940
+Ein halb x2 plus x1 plus zwei.
+
+00:13:08.820 --> 00:13:11.520
+Hier habe ich jetzt einen Ausdruck stehen,
+
+00:13:12.040 --> 00:13:15.260
+wo ich keine Verletzung der mathematischen Regeln habe.
+
+00:13:15.260 --> 00:13:20.040
+Hier oben würde noch beim Grenzübergang, x2 minus x1, natürlich null entstehen im Nenner.
+
+00:13:20.100 --> 00:13:22.100
+Das ist ungünstig.
+
+00:13:22.100 --> 00:13:25.700
+Hier habe ich jetzt einen Nenner von eins, das heißt hier kann ich den Grenzübergang machen.
+
+00:13:25.700 --> 00:13:30.800
+Das heißt in dem Moment, wo x2 nach x1 strebt, steht hier
+
+00:13:31.160 --> 00:13:33.760
+x1 plus x1,
+
+00:13:34.500 --> 00:13:36.780
+das ist natürlich zwei x1.
+
+00:13:36.780 --> 00:13:40.780
+Das kann ich jetzt ausrechnen: Zwei mal ein halb ist natürlich eins.
+
+00:13:40.780 --> 00:13:47.600
+Das heißt die Steigung, die wir hier erhalten ist x1 plus zwei,
+
+00:13:47.680 --> 00:13:52.780
+wobei dieses für jeden Punkt auf meine Parabel entsprechend gilt,
+
+00:13:52.780 --> 00:13:57.520
+denn wir haben x1 und x2 natürgemäß nicht mit Zahlen hinterlegt,
+
+00:13:57.520 --> 00:14:01.120
+das heißt wir haben variabel gerechnet.
+
+00:14:02.460 --> 00:14:05.840
+Den Weg, den ich jetzt eingeschlagen habe, kann ich auch etwas anders formulieren.
+
+00:14:05.960 --> 00:14:08.340
+Das ist passiert mit der sogenannten h-Schreibweise.
+
+00:14:08.540 --> 00:14:13.460
+Das heißt ich führe eine Zwischenvariable h ein,
+
+00:14:13.460 --> 00:14:16.300
+die mir den Abstand von x1
+
+00:14:16.540 --> 00:14:18.640
+zu x2 entsprechend beschreibt.
+
+00:14:18.640 --> 00:14:22.720
+Das heißt der Funktionswert von y1 ist der Funktionswert von x
+
+00:14:22.740 --> 00:14:27.820
+und der Funktionswert von y2 ist der Funktionswert von x plus h.
+
+00:14:27.820 --> 00:14:33.280
+h, haben wir gesagt, ist der Abstand meines zweiten Punktes, dieses hier,
+
+00:14:33.760 --> 00:14:37.640
+von meinem Punkt, wo ich die Tangentensteigung bestimmen möchte.
+
+00:14:39.800 --> 00:14:42.000
+Jetzt jetzt wir das schreibtechnisch um.
+
+00:14:42.000 --> 00:14:47.780
+Dann habe ich y2 hier stehen, das ist nämlich der Funktionswert von x plus h.
+
+00:14:47.820 --> 00:14:54.140
+Das heißt ich erhalte ein halb mal (x plus h) zum Quadrat, gemäß meiner Parabelgleichung,
+
+00:14:54.140 --> 00:14:56.740
+plus zwei mal x plus h plus drei.
+
+00:14:57.140 --> 00:15:00.400
+Hier steht mein Funktionswert von x.
+
+00:15:00.580 --> 00:15:02.800
+Und hier unten steht die Differenz.
+
+00:15:02.940 --> 00:15:05.720
+Und wenn ich das jetzt ausmultipliziere, dann merken Sie schon,
+
+00:15:05.720 --> 00:15:11.640
+es gibt einige Terme, die sich herausheben, die mit unterschiedlichen Vorzeichen belegt sind,
+
+00:15:11.640 --> 00:15:14.300
+nämlich ein halb x Quadrat und ein halb x Quadrat,
+
+00:15:14.300 --> 00:15:17.320
+zwei x hier
+
+00:15:17.700 --> 00:15:22.980
+und die drei, die ebenfalls in beiden Termen übrig bleibt.
+
+00:15:23.020 --> 00:15:25.020
+Hier steht ein neuer Ausdruck
+
+00:15:25.220 --> 00:15:28.140
+der hauptsächlich h als Variable enthält.
+
+00:15:28.140 --> 00:15:34.580
+Das heißt da steht x mal h plus ein halb h Quadrat plus zwei h und das Ganze geteilt durch h.
+
+00:15:34.580 --> 00:15:37.740
+Auch hier kann ich jetzt wieder ausklammern,
+
+00:15:38.220 --> 00:15:41.660
+indem ich das h ausklammere. Das kann ich jetzt auch wieder kürzen.
+
+00:15:41.900 --> 00:15:43.900
+Und übrig bleibt ein Ausdruck:
+
+00:15:44.180 --> 00:15:49.660
+ein halb h plus x plus zwei geteilt durch eins. Und wenn ich jetzt h,
+
+00:15:50.080 --> 00:15:53.660
+die Variabel, die ich meiner Grenzwertbetrachtung unterziehe,
+
+00:15:53.660 --> 00:15:56.680
+gegen null streben lasse, denn die Differenz zwischen meinen Punkten soll ja
+
+00:15:56.740 --> 00:15:59.440
+langsam unendlich klein werden,
+
+00:15:59.840 --> 00:16:04.500
+dann merkt man: wenn h gegen null strebt wird dieser Term gegen null streben
+
+00:16:04.800 --> 00:16:10.360
+und übrig bleibt x plus zwei geteilt durch eins und das ist natürlich x plus zwei.
+
+00:16:10.680 --> 00:16:12.660
+Hiermit haben wir den ersten Einstieg,
+
+00:16:13.000 --> 00:16:16.380
+die ersten Andeutungen von der Differenzialrechnung, durchgeführt.
+
+00:16:16.380 --> 00:16:19.180
+Das werden wir die nächste Woche noch ein Stückchen vertiefen.
+
+00:16:19.180 --> 00:16:20.720
+Und damit beende ich diese Einheit.
+
+00:16:20.720 --> 00:16:24.200
+Ich freue mich schon auf die Videokonferenz mit Ihnen.
+
